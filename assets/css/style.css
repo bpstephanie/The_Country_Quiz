@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(80, 153, 232);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    letter-spacing: 0.5em;
+    font-size: 200%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.initial-btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+}
+
+.initial-btn {
+    padding: 2%;
+    width: 120px;
+    text-align: center;
+    border: 4px solid rgb(7, 59, 2); 
+    background-color: rgb(16, 240, 38);
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+.game-container {
+    background-color: rgb(171, 225, 239);
+}
+
+.question-area {
+    padding: 10%;
+}
+
+.country-buttons {
+    padding: 7%
+}
+
+.answer-btn {
+    margin: 4px;
+    padding: 4%;
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid white;
+    
+}
+
+
+
+#btn--argentina {
+    background: url("../images/argentina-flag.webp") center;
+    background-size: cover;
+}
+
+#btn--bolivia {
+    background: url("../images/bolivia-flag.webp") center;
+    background-size: cover;
+}
+
+#btn--brazil {
+    background: url("../images/brazil-flag.webp") center;
+    background-size: cover;
+}
+
+#btn--chile {
+    background: url("../images/chile-flag.webp") center;
+    background-size: cover;
+}
+
+#btn--colombia {
+    background: url("../images/colombia-flag.webp") center;
+    background-size: cover;
+}
+
+#btn--ecuador {
+    background: url("../images/ecuador-flag.webp") center;
+    background-size: cover;
+}
+
+#btn--guyana {
+    background: url("../images/guyana-flag.webp") center;
+    background-size: cover;
+}
+
+#btn--paraguay {
+    background: url("../images/paraguay-flag.webp") center;
+    background-size: cover;
+}
+
+#btn--peru {
+    background: url("../images/peru-flag.webp") center;
+    background-size: cover;
+}
+
+#btn--suriname {
+    background: url("../images/suriname-flag.webp") center;
+    background-size: cover;
+}
+
+#btn--uruguay {
+    background: url("../images/uruguay-flag.webp") center;
+    background-size: cover;
+}
+
+#btn--venezuela {
+    background: url("../images/venezuela-flag.webp") center;
+    background-size: cover;
+}
+
+.score-area {
+    padding: 0 2% 5% 2%;
+    padding-right: 2%;
+    /*display: flex;*/
+    font-size: 110%;
+    /*justify-content: space-around;*/
+    text-align: center;
+}
