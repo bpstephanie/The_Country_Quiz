@@ -2,7 +2,7 @@
  * Array containing questions, answers and correct answers.
  */
 
-export const quiz = [{
+const quiz = [{
     question: 'Lima is the capital of which country?',
     answers: ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela'],
     correctAnswer: 8
