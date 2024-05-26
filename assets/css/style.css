@@ -69,6 +69,11 @@ form {
     box-shadow: rgba(255, 255, 255, 0.35) 15px 15px 55px;
 }
 
+.begin-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /* Main game area */
 .game-container {
     background-color: rgb(171, 225, 239);
