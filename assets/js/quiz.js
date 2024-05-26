@@ -1,37 +1,109 @@
 /**
  * Array containing questions, answers and correct answers.
  */
-
-const quiz = [{
-    question: 'Lima is the capital of which country?',
-    answers: ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela'],
-    correctAnswer: 8
+/**
+export const questions = [{
+    question: "Lima is the capital of which country?",
+    answers: [
+    {text: "Argentina", correct: false}, 
+    {text: "Bolivia", correct: false},
+    {text: "Brazil", correct: false},
+    {text: "Chile", correct: false},
+    {text: "Colombia", correct: false},
+    {text: "Ecuador", correct: false},
+    {text: "Guyana", correct: false},
+    {text: "Paraguay", correct: false},
+    {text: "Peru", correct: true},
+    {text: "Suriname", correct: false},
+    {text: "Uruguay", correct: false},
+    {text: "Venezuela", correct: false},
+    ]
 },
 {
     question: 'Buenos Aires is the capital of which country?',
-    answers: ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela'],
-    correctAnswer: 0
+    answers: [
+        {text: "Argentina", correct: true}, 
+        {text: "Bolivia", correct: false},
+        {text: "Brazil", correct: false},
+        {text: "Chile", correct: false},
+        {text: "Colombia", correct: false},
+        {text: "Ecuador", correct: false},
+        {text: "Guyana", correct: false},
+        {text: "Paraguay", correct: false},
+        {text: "Peru", correct: false},
+        {text: "Suriname", correct: false},
+        {text: "Uruguay", correct: false},
+        {text: "Venezuela", correct: false},
+        ]
 },
 {
     question: 'Caracas is the capital of which country?',
-    answers: ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela'],
-    correctAnswer: 11
+    answers: [
+        {text: "Argentina", correct: false}, 
+        {text: "Bolivia", correct: false},
+        {text: "Brazil", correct: false},
+        {text: "Chile", correct: false},
+        {text: "Colombia", correct: false},
+        {text: "Ecuador", correct: false},
+        {text: "Guyana", correct: false},
+        {text: "Paraguay", correct: false},
+        {text: "Peru", correct: false},
+        {text: "Suriname", correct: false},
+        {text: "Uruguay", correct: false},
+        {text: "Venezuela", correct: true},
+        ]
 },
 {
     question: 'La Paz is the capital of which country?',
-    answers: ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela'],
-    correctAnswer: 1
+    answers: [
+        {text: "Argentina", correct: false}, 
+        {text: "Bolivia", correct: true},
+        {text: "Brazil", correct: false},
+        {text: "Chile", correct: false},
+        {text: "Colombia", correct: false},
+        {text: "Ecuador", correct: false},
+        {text: "Guyana", correct: false},
+        {text: "Paraguay", correct: false},
+        {text: "Peru", correct: false},
+        {text: "Suriname", correct: false},
+        {text: "Uruguay", correct: false},
+        {text: "Venezuela", correct: false},
+        ]
 },
 {
     question: 'Bogota is the capital of which country?',
-    answers: ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela'],
-    correctAnswer: 4
+    answers: [
+        {text: "Argentina", correct: false}, 
+        {text: "Bolivia", correct: false},
+        {text: "Brazil", correct: false},
+        {text: "Chile", correct: false},
+        {text: "Colombia", correct: true},
+        {text: "Ecuador", correct: false},
+        {text: "Guyana", correct: false},
+        {text: "Paraguay", correct: false},
+        {text: "Peru", correct: false},
+        {text: "Suriname", correct: false},
+        {text: "Uruguay", correct: false},
+        {text: "Venezuela", correct: false},
+        ]
 },
 {
     question: 'Asuncion is the capital of which country?',
-    answers: ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela'],
-    correctAnswer: 7
-},
+    answers: [
+        {text: "Argentina", correct: false}, 
+        {text: "Bolivia", correct: false},
+        {text: "Brazil", correct: false},
+        {text: "Chile", correct: false},
+        {text: "Colombia", correct: false},
+        {text: "Ecuador", correct: false},
+        {text: "Guyana", correct: false},
+        {text: "Paraguay", correct: true},
+        {text: "Peru", correct: false},
+        {text: "Suriname", correct: false},
+        {text: "Uruguay", correct: false},
+        {text: "Venezuela", correct: false},
+        ]
+},/** 
 {
     question: 'Brasilia is the capital of which country?',
     answers: ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela'],
@@ -137,5 +209,30 @@ const quiz = [{
     question: 'Which country has the largest known oil reserves?',
     answers: ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela'],
     correctAnswer: 11   
-},
-]
+}, 
+]*/
+
+
+function howToPlay() {
+
+}
+
+function calculateCorrectAnswer() {
+
+}
+
+function incrementScore() {
+
+}
+
+function incrementWrongScore() {
+
+}
+
+function displayHighScore() {
+
+}
+
+function playSounds() {
+    
+}

@@ -9,7 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Rubik+Mono+One&display=swap"
         rel="stylesheet">
     <!-- Favicon-->
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>The Country Quiz</title>
 </head>
@@ -18,34 +18,45 @@
     <header>
         <h1>The Country Quiz</h1>
         <div class="initial-btn-container">
-            <button class="initial-btn" id="start--btn">Start</button>
+            <div id="username-container">
+                <form method="POST">
+                    <label for="username" id="label">Type your name here:</label><br>
+                    <input id="username" type="text" name="name" placeholder="Jane" required>
+                </form>
+                <br>
+                <button id="submit" class="initial-btn">Submit</button>
+                <button id="start-btn" class="initial-btn hidden">Start</button>
+            </div>
             <button class="initial-btn" id="howtoplay--btn">How To Play</button>
         </div>
     </header>
 
     <div class="game-container">
-        <div class="question-area">This is where the question will be</div>
+        <div class="question-area" id="question">Question goes here</div>
 
 
         <div class="country-buttons">
-            <button class="answer-btn" id= "btn--argentina"><p>Argentina</p></button>
-            <button class="answer-btn" id= "btn--bolivia"><p>Bolivia</p></button>
-            <button class="answer-btn" id= "btn--brazil"><p>Brazil</p></button>
-            <button class="answer-btn" id= "btn--chile"><p>Chile</p></button>
-            <button class="answer-btn" id= "btn--colombia"><p>Colombia</p></button>
-            <button class="answer-btn" id= "btn--ecuador"><p>Ecuador</p></button>
-            <button class="answer-btn" id= "btn--guyana"><p>Guyana</p></button>
-            <button class="answer-btn" id= "btn--paraguay"><p>Paraguay</p></button>
-            <button class="answer-btn" id= "btn--peru"><p>Peru</p></button>
-            <button class="answer-btn" id= "btn--suriname"><p>Suriname</p></button>
-            <button class="answer-btn" id= "btn--uruguay"><p>Uruguay</p></button>
-            <button class="answer-btn" id= "btn--venezuela"><p>Venezuela</p></button>
+            <button class="answer-btn" id= "btn--argentina">Argentina</button>
+            <button class="answer-btn" id= "btn--bolivia">Bolivia</button>
+            <button class="answer-btn" id= "btn--brazil">Brazil</button>
+            <button class="answer-btn" id= "btn--chile">Chile</button>
+            <button class="answer-btn" id= "btn--colombia">Colombia</button>
+            <button class="answer-btn" id= "btn--ecuador">Ecuador</button>
+            <button class="answer-btn" id= "btn--guyana">Guyana</button>
+            <button class="answer-btn" id= "btn--paraguay">Paraguay</button>
+            <button class="answer-btn" id= "btn--peru">Peru</button>
+            <button class="answer-btn" id= "btn--suriname">Suriname</button>
+            <button class="answer-btn" id= "btn--uruguay">Uruguay</button>
+            <button class="answer-btn" id= "btn--venezuela">Venezuela</button>
+        </div>
+        <div>
+            <button id="next-btn"></button>
         </div>
 
         <div class="score-area">
             <p class="scores">Correct Answers <span id="correct-score">14</span></p>
             <p class="scores">Incorrect Answers <span id="incorrect-score">1</span></p>
-            <p class="scores">High Score <span id="high-score">15</span></p>
+            <!--<p class="scores">High Score <span id="high-score">15</span></p> -->
         </div>
     </div>
     <script src="assets/js/quiz.js"></script>
