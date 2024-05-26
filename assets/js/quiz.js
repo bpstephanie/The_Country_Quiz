@@ -461,13 +461,93 @@ const questions =  [
     choice12: "Venezuela",
     answer: 12
   }, 
+  {
+    question: 'Where is the largest salt flat in the world?',
+        
+    choice1: "Argentina",
+    choice2: "Bolivia",
+    choice3: "Brazil",
+    choice4: "Chile", 
+    choice5: "Colombia",
+    choice6: "Ecuador", 
+    choice7: "Guyana", 
+    choice8: "Paraguay", 
+    choice9: "Peru", 
+    choice10: "Suriname",
+    choice11: "Uruguay",
+    choice12: "Venezuela",
+    answer: 2
+  }, 
+  {
+    question: 'Where is Patagonia?',
+        
+    choice1: "Argentina",
+    choice2: "Bolivia",
+    choice3: "Brazil",
+    choice4: "Chile", 
+    choice5: "Colombia",
+    choice6: "Ecuador", 
+    choice7: "Guyana", 
+    choice8: "Paraguay", 
+    choice9: "Peru", 
+    choice10: "Suriname",
+    choice11: "Uruguay",
+    choice12: "Venezuela",
+    answer: 1
+  }, 
+  {
+    question: 'Where is the dance, Tango, from?',
+        
+    choice1: "Argentina",
+    choice2: "Bolivia",
+    choice3: "Brazil",
+    choice4: "Chile", 
+    choice5: "Colombia",
+    choice6: "Ecuador", 
+    choice7: "Guyana", 
+    choice8: "Paraguay", 
+    choice9: "Peru", 
+    choice10: "Suriname",
+    choice11: "Uruguay",
+    choice12: "Venezuela",
+    answer: 1
+  }, 
+  {
+    question: "Which country's name comes from the latin word for silver?",
+        
+    choice1: "Argentina",
+    choice2: "Bolivia",
+    choice3: "Brazil",
+    choice4: "Chile", 
+    choice5: "Colombia",
+    choice6: "Ecuador", 
+    choice7: "Guyana", 
+    choice8: "Paraguay", 
+    choice9: "Peru", 
+    choice10: "Suriname",
+    choice11: "Uruguay",
+    choice12: "Venezuela",
+    answer: 1
+  }, 
+  {
+    question: "Iguazu Falls is located on the border of Argentina, Brazil and which other country?",
+        
+    choice1: "Argentina",
+    choice2: "Bolivia",
+    choice3: "Brazil",
+    choice4: "Chile", 
+    choice5: "Colombia",
+    choice6: "Ecuador", 
+    choice7: "Guyana", 
+    choice8: "Paraguay", 
+    choice9: "Peru", 
+    choice10: "Suriname",
+    choice11: "Uruguay",
+    choice12: "Venezuela",
+    answer: 8
+  }, 
   ]
-
-
-
-function howToPlay() {
-
-}
+  
 
 function calculateCorrectAnswer() {
 

@@ -40,17 +40,15 @@ function enterUsername(){
 
   if (username === '' || username.length < 3 || username.length > 10)  {
     alert('Please enter a valid username of 3 - 10 characters')
-
+    startButton.style.visibility ="hidden"
   } else {
     usernameSubmitted = true;
     let label = document.getElementById('label');
     label.innerHTML =  `Good luck, ${username}`;
     usernameInput.style.visibility ="hidden";
-    submit.style.visibility = "hidden"; 
-  }
-  // Code to hide and display start button https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript 
-  username !== '' ? startButton.style.display = "block" : startButton.style.visibility ="hidden"
-
+    submit.style.visibility = "hidden";
+    startButton.style.display = "block" 
+  } 
 }
 
 // Button event listeners
@@ -71,6 +69,10 @@ function startGame() {
 }
 
 function getNewQuestion () {
+
+  if(availableQuestions.length === 0 || questionCounter >= maxQuestions) {
+    return finalScore();
+  }
   questionCounter ++;
   // To randomize questions, code used: https://www.shecodes.io/athena/10246-how-to-show-random-questions-in-a-quiz-using-javascript
   const randomIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -98,7 +100,13 @@ answerButton.forEach(choice => {
   });
 });
 
+function howToPlay() {
 
+}
+
+function finalScore() {
+
+}
 startButton.addEventListener("click", function() {
   startGame();
 });
