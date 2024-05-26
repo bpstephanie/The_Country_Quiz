@@ -13,6 +13,7 @@ const wrongScore = document.getElementById("incorrect-score");
 const maxQuestions = 10;
 const correctBonus = 1;
 let currentQuestionIndex = {};
+let acceptingAnswers = false;
 let score = 0;
 let incorrectScore = 0;
 let questionCounter = 0;
@@ -24,12 +25,14 @@ nextButton.innerHTML = "Next";
 startButton.style.display ="none";
 //questionArea.style.display ="none";
 
+
+ let usernameSubmitted = false;
+ submit.addEventListener('click', enterUsername);
+
 /**
  * Function to allow user to enter a username
  */
  // Username setting
- let usernameSubmitted = false;
- submit.addEventListener('click', enterUsername);
 
 function enterUsername(){
   let usernameInput = document.getElementById("username");
@@ -43,7 +46,7 @@ function enterUsername(){
     let label = document.getElementById('label');
     label.innerHTML =  `Good luck, ${username}`;
     usernameInput.style.visibility ="hidden";
-    submit.style.visibility = "hidden";   
+    submit.style.visibility = "hidden"; 
   }
   // Code to hide and display start button https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript 
   username !== '' ? startButton.style.display = "block" : startButton.style.visibility ="hidden"
@@ -59,8 +62,9 @@ function enterUsername(){
  * This function starts the game
  */
 function startGame() {
-  questionCounter= 0;
+  questionCounter = 0;
   score = 0;
+  correctScore.innerHTML = score;
   availableQuestions = [...questions];
   console.log(availableQuestions);
   getNewQuestion();
@@ -77,22 +81,24 @@ function getNewQuestion () {
     const number = choice.dataset['number'];
     choice.innerText = currentQuestionIndex['choice' + number];
   });
+
+  availableQuestions.splice(randomIndex, 1);
+  acceptingAnswers = true;
 };
 
+answerButton.forEach(choice => {
+  choice.addEventListener("click", e => {
+    if (!acceptingAnswers) return;
 
-//  return questions[randomIndex];
-//}
+    acceptingAnswers = false;
+    const selectedChoice = e.target;
+    const selectedAnswer = selectedChoice.dataset["number"];
+    getNewQuestion();
 
-//function displayQuestion() {
-//   let currentQuestion = questions[currentQuestionIndex];
-//   let questionNum = currentQuestionIndex  + 1;
-//   questionElement.innerHTML = currentQuestion.question;
-//}
+  });
+});
 
-//startButton.addEventListener('click', runQuiz);
 
-//function hiddenButton() {
-//  startButton.style.display = "none";
-//}
-
-startGame();
+startButton.addEventListener("click", function() {
+  startGame();
+});

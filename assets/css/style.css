@@ -108,7 +108,6 @@ form {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     letter-spacing: 0.1em;
-    transition: all 0.3s;
 }
 
 .country-buttons button:hover {
