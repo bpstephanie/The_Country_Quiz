@@ -20,13 +20,13 @@
         <div class="initial-btn-container">
             <div id="username-container">
                 <form method="POST">
-                    <label for="username" id="label">Type your name here:</label><br>
-                    <input id="username" type="text" name="name" placeholder="Jane" required>
+                    <label for="username" id="label">Hi! What's your name?</label><br>
+                    <input id="username" type="text" name="name" placeholder="Type your name here..." required>
                 </form>
                 <br>
                 <div class="begin-buttons">
                     <button id="submit" class="initial-btn">Submit</button>
-                    <button id="start-btn" class="initial-btn hidden">Start</button>
+                    <button id="start-btn" class="initial-btn">Start</button>
                 </div>
             </div>
             <button class="initial-btn" id="howtoplay--btn">How To Play</button>
@@ -34,24 +34,25 @@
     </header>
 
     <div class="game-container">
-        <div class="question-area" id="question"></div>
-
+        <div class="question-area">
+            <h2 id="question"></h2>
+        </div>
 
         <div class="country-buttons">
-            <button class="answer-btn" id="btn--argentina">Argentina</button>
-            <button class="answer-btn" id="btn--bolivia">Bolivia</button>
-            <button class="answer-btn" id="btn--brazil">Brazil</button>
-            <button class="answer-btn" id="btn--chile">Chile</button>
-            <button class="answer-btn" id="btn--colombia">Colombia</button>
-            <button class="answer-btn" id="btn--ecuador">Ecuador</button>
-            <button class="answer-btn" id="btn--guyana">Guyana</button>
-            <button class="answer-btn" id="btn--paraguay">Paraguay</button>
-            <button class="answer-btn" id="btn--peru">Peru</button>
-            <button class="answer-btn" id="btn--suriname">Suriname</button>
-            <button class="answer-btn" id="btn--uruguay">Uruguay</button>
-            <button class="answer-btn" id="btn--venezuela">Venezuela</button>
+            <button class="answer-btn" id="btn--argentina" data-number="1">Argentina</button>
+            <button class="answer-btn" id="btn--bolivia" data-number="2">Bolivia</button>
+            <button class="answer-btn" id="btn--brazil" data-number="3">Brazil</button>
+            <button class="answer-btn" id="btn--chile" data-number="4">Chile</button>
+            <button class="answer-btn" id="btn--colombia" data-number="5">Colombia</button>
+            <button class="answer-btn" id="btn--ecuador" data-number="6">Ecuador</button>
+            <button class="answer-btn" id="btn--guyana" data-number="7">Guyana</button>
+            <button class="answer-btn" id="btn--paraguay" data-number="8">Paraguay</button>
+            <button class="answer-btn" id="btn--peru" data-number="9">Peru</button>
+            <button class="answer-btn" id="btn--suriname" data-number="10">Suriname</button>
+            <button class="answer-btn" id="btn--uruguay" data-number="11">Uruguay</button>
+            <button class="answer-btn" id="btn--venezuela" data-number="12">Venezuela</button>
         </div>
-        <div>
+        <div class="next-container">
             <button id="next-btn"></button>
         </div>
 
@@ -61,8 +62,11 @@
             <!--<p class="scores">High Score <span id="high-score">15</span></p> -->
         </div>
     </div>
+    <!-- JavaScript Questions-->
     <script src="assets/js/quiz.js"></script>
+    <!-- JavaScript Main-->
     <script type="module" src="assets/js/script.js"></script>
+    <noscript>Your browser does not support JavaScript!</noscript>
 </body>
 
 </html>

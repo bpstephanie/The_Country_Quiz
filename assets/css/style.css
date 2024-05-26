@@ -175,6 +175,23 @@ form {
     background-size: cover;
 }
 
+.next-container {
+    display: flex;
+    justify-content: center;
+}
+
+#next-btn {
+    width: 120px;
+    text-align: center;
+    border: 4px solid rgb(241, 243, 240); 
+    background-color: rgb(240, 68, 16);
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    color: white;
+    font-size: 150%;
+}
+
 .score-area {
     padding: 0 2% 5% 2%;
     padding-right: 2%;
