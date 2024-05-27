@@ -7,7 +7,7 @@
 
 /* General styles */
 body {
-    background-color: rgb(80, 153, 232);
+    background-color: rgba(17, 244, 150);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -128,7 +128,7 @@ form {
     width: 110px;
     height: 70px;
     text-align: center;
-    border: 2px solid white;
+    border: 3px solid black;
     position: relative;
     display: flex;
     align-items: flex-end;
