@@ -6,7 +6,7 @@ const startButton = document.getElementById("start-btn");
 //const questionArea = document.getElementById("question-area");
 const questionElement = document.getElementById("question")
 const answerButton = Array.from(document.getElementsByClassName("answer-btn"));
-const nextButton = document.getElementById("next-btn");
+const restartButton = document.getElementById("restart-btn");
 const correctScore = document.getElementById("correct-score");
 const wrongScore = document.getElementById("incorrect-score");
 //const highScore = document.getElementById("high-score");
@@ -18,7 +18,7 @@ let score = 0;
 let incorrectScore = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-nextButton.innerHTML = "Next";
+restartButton.innerHTML = "Restart";
 
 
 // Hidden elements before game starts

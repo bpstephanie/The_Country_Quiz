@@ -4,10 +4,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/*.hidden {
-    display: none;
-}*/
-
 /* Heading */
 h1 {
     font-family: 'Rubik Mono One', sans-serif;
@@ -21,9 +17,9 @@ h1 {
 }
 
 /* Start game buttons */
-.initial-btn-container {
+.btn-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: 10%;
 }
 
@@ -44,6 +40,7 @@ form {
     height: 30px;
     color: white;
     font-size: 120%;
+    margin: 5%;
 }
 
 ::placeholder {
@@ -51,11 +48,17 @@ form {
     font-size: 120%;
 }
 
+/* Submit and start buttons */
+.initial-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .initial-btn {
     padding: 2%;
     width: 120px;
     text-align: center;
-    border: 4px solid rgb(241, 243, 240); 
+    border: 4px solid rgb(241, 243, 240);
     background-color: rgb(240, 68, 16);
     border-radius: 2px;
     text-transform: uppercase;
@@ -68,11 +71,6 @@ form {
     border: solid 5px black;
 }
 
-.begin-buttons {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 /* Main game area */
 .game-container {
     background-color: rgb(171, 225, 239);
@@ -82,12 +80,16 @@ form {
     padding: 5%;
     text-align: center;
 }
-
+/* Answer buttons */
 .country-buttons {
     padding: 5%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.country-buttons button:hover {
+    border: solid 10px black;
 }
 
 .answer-btn {
@@ -107,10 +109,6 @@ form {
     font-size: 85%;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-}
-
-.country-buttons button:hover  {
-    border: solid 10px black;
 }
 
 #btn--argentina {
@@ -178,10 +176,10 @@ form {
     justify-content: center;
 }
 
-#next-btn {
-    width: 120px;
+#restart-btn {
+    width: 140px;
     text-align: center;
-    border: 4px solid rgb(241, 243, 240); 
+    border: 4px solid rgb(241, 243, 240);
     background-color: rgb(240, 68, 16);
     border-radius: 2px;
     text-transform: uppercase;
@@ -190,16 +188,15 @@ form {
     font-size: 150%;
 }
 
-#next-btn:hover {
+#restart-btn:hover {
     border: solid 5px black;
 }
 
+/* Score area */
 .score-area {
     padding: 0 2% 5% 2%;
     padding-right: 2%;
-    /*display: flex;*/
     font-size: 110%;
-    /*justify-content: space-around;*/
     text-align: center;
 }
 
