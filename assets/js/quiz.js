@@ -836,19 +836,6 @@ const questions =  [
     answer: 11
   },  
   ]
-  
-
-function calculateCorrectAnswer() {
-
-}
-
-function incrementScore() {
-
-}
-
-function incrementWrongScore() {
-
-}
 
 function displayHighScore() {
 

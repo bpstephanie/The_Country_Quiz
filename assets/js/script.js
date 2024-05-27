@@ -7,14 +7,16 @@ const questionElement = document.getElementById("question")
 const answerButton = Array.from(document.getElementsByClassName("answer-btn"));
 const restartButton = document.getElementById("restart-btn");
 const correctScore = document.getElementById("correct-score");
-const wrongScore = document.getElementById("incorrect-score");
+const wrongScoreText = document.getElementById("incorrect-score");
 //const highScore = document.getElementById("high-score");
+const questionCounterText = document.getElementById('questionCounter');
+
 const maxQuestions = 10;
 const correctBonus = 1;
 let currentQuestionIndex = {};
 let acceptingAnswers = false;
 let score = 0;
-let incorrectScore = 0;
+let wrongScore = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 restartButton.innerHTML = "Restart";
@@ -69,7 +71,11 @@ function getNewQuestion() {
   if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
     return finalScore();
   }
+
   questionCounter++;
+  // Lets user know what question number they are on
+  questionCounterText.innerHTML = questionCounter + "/" + maxQuestions;
+
   // To randomize questions, code used: https://www.shecodes.io/athena/10246-how-to-show-random-questions-in-a-quiz-using-javascript
   const randomIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestionIndex = availableQuestions[randomIndex];
@@ -98,7 +104,7 @@ answerButton.forEach(choice => {
     if(selectedAnswer == correctAnswer) {
       selectedChoice.style.borderColor = "#0FFF50";
       selectedChoice.style.color ="#0FFF50"
-      incrementScore()
+      incrementScore();
     } else {
       selectedChoice.style.borderColor = "#FF0000";
       selectedChoice.style.color = "#FF0000";
@@ -113,6 +119,18 @@ answerButton.forEach(choice => {
     
   });
 });
+
+function incrementScore() {
+
+  let oldScore = parseInt(correctScore.innerText);
+	document.getElementById('correct-score').innerText = ++oldScore;
+}
+
+function incrementWrongScore() {
+ 
+  wrongScore += 1;
+  wrongScoreText.innerText = wrongScore;
+}
 
 function howToPlay() {
 
