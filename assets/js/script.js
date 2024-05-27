@@ -12,7 +12,6 @@ const wrongScoreText = document.getElementById("incorrect-score");
 const questionCounterText = document.getElementById('questionCounter');
 
 const maxQuestions = 10;
-const correctBonus = 1;
 let currentQuestionIndex = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -21,12 +20,12 @@ let questionCounter = 0;
 let availableQuestions = [];
 restartButton.innerHTML = "Restart";
 
+// Used this code to implement audio feedback to users https: //noaheakin.medium.com/adding-sound-to-your-js-web-app-f6a0ca728984#:~:text=The%20simplest%20way%20to%20add,starts%20playing%20the%20current%20audio.
 let winSound = document.querySelector('#win-sound');
 
 // Hidden elements before game starts
 startButton.style.display = "none";
 //questionArea.style.display ="none";
-
 
 let usernameSubmitted = false;
 submit.addEventListener('click', enterUsername);
@@ -101,11 +100,11 @@ answerButton.forEach(choice => {
     console.log(selectedChoice);
     console.log(correctAnswer);
 
-// Highlights the button border and text color green if correct and red if incorrect 
-    if(selectedAnswer == correctAnswer) {
+    // Highlights the button border and text color green if correct and red if incorrect 
+    if (selectedAnswer == correctAnswer) {
       winSound.play();
       selectedChoice.style.borderColor = "#0FFF50";
-      selectedChoice.style.color ="#0FFF50"
+      selectedChoice.style.color = "#0FFF50"
       incrementScore();
     } else {
       selectedChoice.style.borderColor = "#FF0000";
@@ -114,22 +113,22 @@ answerButton.forEach(choice => {
     }
 
     setTimeout(() => {
-      selectedChoice.style.borderColor ="";
-      selectedChoice.style.color ="";
+      selectedChoice.style.borderColor = "";
+      selectedChoice.style.color = "";
       getNewQuestion();
     }, 2000);
-    
+
   });
 });
 
 function incrementScore() {
 
   let oldScore = parseInt(correctScore.innerText);
-	document.getElementById('correct-score').innerText = ++oldScore;
+  document.getElementById('correct-score').innerText = ++oldScore;
 }
 
 function incrementWrongScore() {
- 
+
   wrongScore += 1;
   wrongScoreText.innerText = wrongScore;
 }
