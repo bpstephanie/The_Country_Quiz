@@ -21,6 +21,7 @@ let questionCounter = 0;
 let availableQuestions = [];
 restartButton.innerHTML = "Restart";
 
+let winSound = document.querySelector('#win-sound');
 
 // Hidden elements before game starts
 startButton.style.display = "none";
@@ -102,6 +103,7 @@ answerButton.forEach(choice => {
 
 // Highlights the button border and text color green if correct and red if incorrect 
     if(selectedAnswer == correctAnswer) {
+      winSound.play();
       selectedChoice.style.borderColor = "#0FFF50";
       selectedChoice.style.color ="#0FFF50"
       incrementScore();
@@ -115,7 +117,7 @@ answerButton.forEach(choice => {
       selectedChoice.style.borderColor ="";
       selectedChoice.style.color ="";
       getNewQuestion();
-    }, 1500);
+    }, 2000);
     
   });
 });

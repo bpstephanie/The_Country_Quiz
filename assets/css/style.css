@@ -121,14 +121,6 @@ form {
     border: solid 10px black;
 }
 
-.correct {
-    border: solid 10px green;
-}
-
-.incorrect {
-    border: solid 10px red;
-}
-
 .answer-btn {
     font-family: 'Rubik Mono One', sans-serif;
     font-weight: 700;
