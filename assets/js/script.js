@@ -38,6 +38,7 @@ function enterUsername(){
   let usernameInput = document.getElementById("username");
   let username = usernameInput.value.trim();
 
+
   if (username === '' || username.length < 3 || username.length > 10)  {
     alert('Please enter a valid username of 3 - 10 characters')
     startButton.style.visibility ="hidden"
