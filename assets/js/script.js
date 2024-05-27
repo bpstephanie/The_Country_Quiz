@@ -1,15 +1,13 @@
 // Variables
 const submit = document.getElementById("submit");
 const startButton = document.getElementById("start-btn");
-//const howToPlayButton = document.getElementById("howtoplay--btn");
-//const questionArea = document.getElementById("question-area");
 const questionElement = document.getElementById("question")
 const answerButton = Array.from(document.getElementsByClassName("answer-btn"));
 const restartButton = document.getElementById("restart-btn");
 const correctScore = document.getElementById("correct-score");
 const wrongScoreText = document.getElementById("incorrect-score");
-//const highScore = document.getElementById("high-score");
 const questionCounterText = document.getElementById('questionCounter');
+const endScreenContainer = document.getElementById('endscreen-container');
 
 const maxQuestions = 10;
 let currentQuestionIndex = {};
@@ -18,14 +16,14 @@ let score = 0;
 let wrongScore = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-restartButton.innerHTML = "Restart";
+let finalTally = document.getElementById('final-score')
+restartButton.innerText = "Restart";
 
 // Used this code to implement audio feedback to users https: //noaheakin.medium.com/adding-sound-to-your-js-web-app-f6a0ca728984#:~:text=The%20simplest%20way%20to%20add,starts%20playing%20the%20current%20audio.
 let winSound = document.querySelector('#win-sound');
 
 // Hidden elements before game starts
 startButton.style.display = "none";
-//questionArea.style.display ="none";
 
 let usernameSubmitted = false;
 submit.addEventListener('click', enterUsername);
@@ -66,10 +64,13 @@ function startGame() {
   getNewQuestion();
 }
 
+/**
+ * This function gets a random new question
+ */
 function getNewQuestion() {
 
   if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
-    return finalScore();
+    return toEndScreen();
   }
 
   questionCounter++;
@@ -103,12 +104,12 @@ answerButton.forEach(choice => {
     // Highlights the button border and text color green if correct and red if incorrect 
     if (selectedAnswer == correctAnswer) {
       winSound.play();
-      selectedChoice.style.borderColor = "#0FFF50";
-      selectedChoice.style.color = "#0FFF50"
+      selectedChoice.style.borderColor = "green";
+      selectedChoice.style.color = "green"
       incrementScore();
     } else {
-      selectedChoice.style.borderColor = "#FF0000";
-      selectedChoice.style.color = "#FF0000";
+      selectedChoice.style.borderColor = "red";
+      selectedChoice.style.color = "red";
       incrementWrongScore();
     }
 
@@ -121,25 +122,41 @@ answerButton.forEach(choice => {
   });
 });
 
+/**
+ * This function increases correct answers
+ */
 function incrementScore() {
 
-  let oldScore = parseInt(correctScore.innerText);
-  document.getElementById('correct-score').innerText = ++oldScore;
+  /*let oldScore = parseInt(correctScore.innerText);
+  document.getElementById('correct-score').innerText = ++oldScore;*/
+  score += 1;
+  correctScore.innerText = score;
 }
 
+/**
+ * This function increases wrong answers
+ */
 function incrementWrongScore() {
 
   wrongScore += 1;
   wrongScoreText.innerText = wrongScore;
 }
 
-function howToPlay() {
-
-}
-
 function finalScore() {
 
 }
+
+/**
+ * This function shows the end screen
+ */
+function toEndScreen() {
+  if (score >= 5) {
+    questionElement.innerText = `You scored ${score}/10. \n Well done!`;
+  } else {
+    questionElement.innerText = `You scored ${wrongScore} incorrect answers.\n Bad luck, better luck next time!`;
+  }
+}
+
 startButton.addEventListener("click", function () {
   startGame();
 });

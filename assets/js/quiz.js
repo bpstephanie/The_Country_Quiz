@@ -700,7 +700,7 @@ const questions =  [
     answer: 12
   }, 
   {
-    question: "Which country has the highest inflation rate",
+    question: "Which country has the highest inflation rate?",
         
     choice1: "Argentina",
     choice2: "Bolivia",

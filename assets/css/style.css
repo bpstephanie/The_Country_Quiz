@@ -11,6 +11,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Heading */
 h1 {
     font-family: 'Rubik Mono One', sans-serif;
@@ -199,6 +203,30 @@ form {
     background-size: cover;
 }
 
+/* Score area */
+.score-area {
+    padding: 2% 2% 5% 2%;
+    font-size: 110%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+.scores {
+    margin: 1%;
+}
+
+/* End screen container */
+#endscreen-container {
+    background-color: white;
+    border: solid 2px black;
+    margin: 5% 10%;
+    text-align: center;
+    position: relative;
+    bottom: 400px;
+    padding: 10%;
+}
+
 .next-container {
     display: flex;
     justify-content: center;
@@ -221,19 +249,6 @@ form {
     border: solid 5px black;
 }
 
-/* Score area */
-.score-area {
-    padding: 2% 2% 5% 2%;
-    font-size: 110%;
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-}
-
-.scores {
-    margin: 1%;
-}
-
 /* Footer */
 footer {
     color: #ffffff;
@@ -251,6 +266,15 @@ footer {
 
 #socialmedia-icons i {
     color: #ffffff;
+}
+
+/* Media query: large phones and up */
+@media (min-width: 368px) {
+    #endscreen-container {
+        position: relative;
+        bottom: 340px;
+        padding: 5%;
+    }
 }
 
 /* Media query: tablets and up */
@@ -282,6 +306,12 @@ footer {
     .country-buttons {
         padding: 3%;
     }
+
+    #endscreen-container {
+        margin: 5% 20%;
+        position: relative;
+        bottom: 450px;
+    }
 }
 
 /* Media query: laptops and desktops and up */
@@ -299,5 +329,11 @@ footer {
         height: 150px;
         font-size: 150%;
         -webkit-text-stroke-width: 2px;
+    }
+
+    #endscreen-container {
+        margin: 5% 30%;
+        position: relative;
+        bottom: 600px;
     }
 }
