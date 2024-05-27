@@ -45,7 +45,7 @@ form {
 
 ::placeholder {
     color: rgba(255, 255, 255, 0.5);
-    font-size: 120%;
+    font-size: 100%;
 }
 
 /* Submit and start buttons */
@@ -79,6 +79,18 @@ form {
 /* Main game area */
 .game-container {
     background-color: rgb(165, 226, 241);
+    margin: 2%;
+}
+
+/* Question counter and question area */
+#hud-item {
+    padding-top: 3%;
+    font-family: 'Rubik Mono One', sans-serif;
+    padding-left: 15%;
+}
+
+.hud-prefix {
+    font-size: 120%;   
 }
 
 .question-area {
@@ -216,8 +228,12 @@ form {
 /* Media query: tablets and up */
 @media (min-width: 768px) {
     h1 {
-        font-size: 400%;
+        font-size: 300%;
         margin-bottom: 4%;
+    }
+
+    .btn-container {
+        margin-bottom: 3%;
     }
 
     .initial-btn-container {
@@ -225,7 +241,7 @@ form {
     }
 
     .question-area {
-        padding: 5%;
+        padding: 2%;
     }
 
     .answer-btn {
@@ -234,10 +250,18 @@ form {
         font-size: 110%;
         -webkit-text-stroke-width: 2px;
     }
+
+    .country-buttons {
+        padding: 3%;
+    }
 }
 
 /* Media query: laptops and desktops and up */
 @media (min-width: 992px) {
+
+    h1 {
+        font-size: 400%;
+    }
     .initial-btn-container {
         margin-bottom: 3%;
     }
