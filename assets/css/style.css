@@ -1,3 +1,10 @@
+/* Asterisk wildcard selector to override default styles added by the browser*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /* General styles */
 body {
     background-color: rgb(80, 153, 232);
@@ -7,20 +14,22 @@ body {
 /* Heading */
 h1 {
     font-family: 'Rubik Mono One', sans-serif;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.2em;
     font-size: 200%;
     text-align: center;
-    margin-bottom: 10%;
+    margin: 5%;
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+    max-width: 100%;
 }
 
 /* Start game buttons */
 .btn-container {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 10%;
+    margin: 5% 5% 10% 5%;
+    max-width: 100%;
 }
 
 form {
@@ -65,6 +74,7 @@ form {
     transition-duration: 0.4s;
     color: white;
     font-size: 150%;
+    cursor: pointer;
 }
 
 .initial-btn:hover {
@@ -80,13 +90,16 @@ form {
 .game-container {
     background-color: rgb(165, 226, 241);
     margin: 2%;
+    max-width: 100%;
 }
 
 /* Question counter and question area */
 #hud-item {
     padding-top: 3%;
-    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
     padding-left: 15%;
+    text-transform: uppercase;
 }
 
 .hud-prefix {
@@ -99,7 +112,6 @@ form {
 }
 /* Answer buttons */
 .country-buttons {
-    padding: 5%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -211,6 +223,7 @@ form {
     transition-duration: 0.4s;
     color: white;
     font-size: 150%;
+    cursor: pointer;
 }
 
 #restart-btn:hover {
@@ -219,10 +232,34 @@ form {
 
 /* Score area */
 .score-area {
-    padding: 0 2% 5% 2%;
-    padding-right: 2%;
+    padding: 2% 2% 5% 2%;
     font-size: 110%;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+.scores {
+    margin: 1%;
+}
+
+/* Footer */
+footer {
+    color: #ffffff;
+    padding: 1%;
+}
+
+#socialmedia-icons {
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    font-size: 200%;
+    list-style-type: none;
+}
+
+#socialmedia-icons i {
+    color: #ffffff;
 }
 
 /* Media query: tablets and up */
