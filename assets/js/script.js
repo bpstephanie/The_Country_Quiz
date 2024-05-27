@@ -1,4 +1,3 @@
-
 // Variables
 const submit = document.getElementById("submit");
 const startButton = document.getElementById("start-btn");
@@ -22,38 +21,35 @@ restartButton.innerHTML = "Restart";
 
 
 // Hidden elements before game starts
-startButton.style.display ="none";
+startButton.style.display = "none";
 //questionArea.style.display ="none";
 
 
- let usernameSubmitted = false;
- submit.addEventListener('click', enterUsername);
+let usernameSubmitted = false;
+submit.addEventListener('click', enterUsername);
 
 /**
  * Function to allow user to enter a username
  */
- // Username setting
+// Username setting
 
-function enterUsername(){
+function enterUsername() {
   let usernameInput = document.getElementById("username");
   let username = usernameInput.value.trim();
 
 
-  if (username === '' || username.length < 3 || username.length > 10)  {
+  if (username === '' || username.length < 3 || username.length > 10) {
     alert('Please enter a valid username of 3 - 10 characters')
-    startButton.style.visibility ="hidden"
+    startButton.style.visibility = "hidden"
   } else {
     usernameSubmitted = true;
     let label = document.getElementById('label');
-    label.innerHTML =  `Good luck, ${username}`;
-    usernameInput.style.visibility ="hidden";
+    label.innerHTML = `Good luck, ${username}`;
+    usernameInput.style.visibility = "hidden";
     submit.style.visibility = "hidden";
-    startButton.style.display = "block" 
-  } 
+    startButton.style.display = "block"
+  }
 }
-
-// Button event listeners
-//startButton.addEventListener('click', startGame());
 
 // Functions
 // Followed YouTube Tutorial for basic set up https://www.youtube.com/watch?v=zZdQGs62cR8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=4 
@@ -65,22 +61,21 @@ function startGame() {
   score = 0;
   correctScore.innerHTML = score;
   availableQuestions = [...questions];
-  console.log(availableQuestions);
   getNewQuestion();
 }
 
-function getNewQuestion () {
+function getNewQuestion() {
 
-  if(availableQuestions.length === 0 || questionCounter >= maxQuestions) {
+  if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
     return finalScore();
   }
-  questionCounter ++;
+  questionCounter++;
   // To randomize questions, code used: https://www.shecodes.io/athena/10246-how-to-show-random-questions-in-a-quiz-using-javascript
   const randomIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestionIndex = availableQuestions[randomIndex];
   questionElement.innerHTML = currentQuestionIndex.question;
 
-  answerButton.forEach (choice => {
+  answerButton.forEach(choice => {
     const number = choice.dataset['number'];
     choice.innerText = currentQuestionIndex['choice' + number];
   });
@@ -90,14 +85,26 @@ function getNewQuestion () {
 };
 
 answerButton.forEach(choice => {
-  choice.addEventListener("click", e => {
+  choice.addEventListener("click", event => {
     if (!acceptingAnswers) return;
-
     acceptingAnswers = false;
-    const selectedChoice = e.target;
+    const selectedChoice = event.target;
     const selectedAnswer = selectedChoice.dataset["number"];
-    getNewQuestion();
+    const correctAnswer = currentQuestionIndex.answer;
+    console.log(selectedChoice);
+    console.log(correctAnswer);
+    
+    //const classToApply =
+      //selectedAnswer == currentQuestionIndex ? "correct" : "incorrect";
 
+    if(selectedAnswer == correctAnswer) {
+      selectedChoice.style.borderColor = "#0FFF50";
+      incrementScore()
+    } else {
+      selectedChoice.style.borderColor = "#FF0000";
+      incrementWrongScore();
+    }
+    getNewQuestion();
   });
 });
 
@@ -108,6 +115,6 @@ function howToPlay() {
 function finalScore() {
 
 }
-startButton.addEventListener("click", function() {
+startButton.addEventListener("click", function () {
   startGame();
 });
