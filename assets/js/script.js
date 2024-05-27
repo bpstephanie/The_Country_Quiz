@@ -93,18 +93,24 @@ answerButton.forEach(choice => {
     const correctAnswer = currentQuestionIndex.answer;
     console.log(selectedChoice);
     console.log(correctAnswer);
-    
-    //const classToApply =
-      //selectedAnswer == currentQuestionIndex ? "correct" : "incorrect";
 
+// Highlights the button border and text color green if correct and red if incorrect 
     if(selectedAnswer == correctAnswer) {
       selectedChoice.style.borderColor = "#0FFF50";
+      selectedChoice.style.color ="#0FFF50"
       incrementScore()
     } else {
       selectedChoice.style.borderColor = "#FF0000";
+      selectedChoice.style.color = "#FF0000";
       incrementWrongScore();
     }
-    getNewQuestion();
+
+    setTimeout(() => {
+      selectedChoice.style.borderColor ="";
+      selectedChoice.style.color ="";
+      getNewQuestion();
+    }, 1500);
+    
   });
 });
 
