@@ -18,6 +18,7 @@ let availableQuestions = [];
 
 // Used this code to implement audio feedback to users https: //noaheakin.medium.com/adding-sound-to-your-js-web-app-f6a0ca728984#:~:text=The%20simplest%20way%20to%20add,starts%20playing%20the%20current%20audio.
 let winSound = document.querySelector('#win-sound');
+let loseSound = document.querySelector('#lose-sound');
 
 // Hidden elements before game starts
 startButton.style.display = "none";
@@ -105,6 +106,7 @@ answerButton.forEach(choice => {
       selectedChoice.style.color = "green";
       incrementScore();
     } else {
+      loseSound.play();
       selectedChoice.style.borderColor = "red";
       selectedChoice.style.color = "red";
       incrementWrongScore();
