@@ -34,8 +34,8 @@ function enterUsername() {
   let username = usernameInput.value.trim();
 
 
-  if (username === '' || username.length < 3 || username.length > 10) {
-    alert('Please enter a valid username of 3 - 10 characters');
+  if (username === '' || username.length < 3 || username.length > 10 ||/\d/.test(username)) {
+    alert('Please enter a valid username of 3 - 10 letters');
     return;
   } else {
     usernameSubmitted = true;
@@ -96,8 +96,6 @@ answerButton.forEach(choice => {
     const selectedChoice = event.target;
     const selectedAnswer = selectedChoice.dataset["number"];
     const correctAnswer = currentQuestionIndex.answer;
-    console.log(selectedChoice);
-    console.log(correctAnswer);
 
     // Highlights the button border and text color green if correct and red if incorrect 
     if (selectedAnswer == correctAnswer) {
@@ -109,6 +107,7 @@ answerButton.forEach(choice => {
       loseSound.play();
       selectedChoice.style.borderColor = "red";
       selectedChoice.style.color = "red";
+      console.log(answerButton[currentQuestionIndex.answer]);
       incrementWrongScore();
     }
 
