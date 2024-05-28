@@ -322,6 +322,26 @@ footer {
         margin: 2% 5% 2% 5%;
     }
 
+    .modal-content  {
+        margin: 20% auto;
+        padding: 5%;
+    }
+
+    .htp-modal-content {
+        margin: 20% auto;
+        padding: 5%;
+        width: 70%;
+        font-size: 110%;
+    }
+    
+    .htp-modal-content h3 {
+        font-size: 220%;
+    }
+
+    #close-btn {
+        font-size: 50px;
+    }
+
     #question {
         padding: 2%;
     }
@@ -340,13 +360,32 @@ footer {
 
 /* Media query: laptops and desktops and up */
 @media (min-width: 992px) {
-
+/* Heading */
     h1 {
         font-size: 400%;
         margin: 2%;
     }
     .initial-btn-container {
         margin-bottom: 3%;
+    }
+
+    .modal-content  {
+        margin: 10% auto;
+        width: 60%;
+    }
+
+    .htp-modal-content {
+        margin: 10% auto;
+        width: 60%;
+        font-size: 130%;
+    }
+    
+    .htp-modal-content h3 {
+        font-size: 250%;
+    }
+
+    #close-btn {
+        font-size: 60px;
     }
 
     #question {
