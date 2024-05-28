@@ -8,7 +8,7 @@
 /* General styles */
 body {
     background-color: rgb(17, 165, 244);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 /* Heading */
@@ -18,7 +18,7 @@ h1 {
     font-size: 200%;
     text-align: center;
     margin: 5%;
-    color: white;
+    color: rgb(241, 243, 240);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     max-width: 100%;
@@ -46,15 +46,15 @@ form {
 #username {
     border-radius: 5%;
     background-color: rgb(240, 68, 16);
-    border: 2px solid white;
+    border: 2px solid rgb(241, 243, 240);
     height: 30px;
-    color: white;
+    color: rgb(241, 243, 240);
     font-size: 120%;
     margin: 5%;
 }
 
 ::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(241, 243, 240, 0.5);
     font-size: 100%;
 }
 
@@ -72,7 +72,7 @@ form {
     border-radius: 2px;
     text-transform: uppercase;
     transition-duration: 0.4s;
-    color: white;
+    color: rgb(241, 243, 240);
     font-size: 150%;
     cursor: pointer;
 }
@@ -96,11 +96,10 @@ form {
 /* Question counter and question area */
 #hud-item {
     padding-top: 3%;
-    font-family: 'Rubik', sans-serif;
     font-weight: 700;
     padding-left: 15%;
     text-transform: uppercase;
-    color: rgb(69, 67, 67);
+    color: rgb(120, 36, 11);
 }
 
 .hud-prefix {
@@ -110,7 +109,6 @@ form {
 #question {
     padding: 5%;
     text-align: center;
-    font-family: 'Rubik', sans-serif;
     font-weight: 700;
     text-align: center;
     font-size: 130%;
@@ -128,7 +126,6 @@ form {
 }
 
 .answer-btn {
-    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     margin: 4px;
     width: 110px;
@@ -210,9 +207,8 @@ form {
     padding: 2%;
     font-size: 110%;
     text-align: center;
-    font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    color: rgb(69, 67, 67);
+    color: rgb(120, 36, 11);
 }
 
 .scores {
@@ -221,7 +217,7 @@ form {
 
 /* Footer */
 footer {
-    color: #ffffff;
+    color: rgb(241, 243, 240);
     padding: 1%;
 }
 

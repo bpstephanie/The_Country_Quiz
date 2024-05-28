@@ -1,7 +1,10 @@
 # The Couuntry Quiz
-The Country Quiz is an interactive JavaScript game to test users knowledge about South America in a fun way. Usernames, correct answers and incorrect answers are recorded. The quiz has 10 questions per round which are randomized so the user can play many times.
+The Country Quiz is an interactive JavaScript game to test users knowledge about South America in a fun way. Usernames, correct answers and incorrect answers are recorded. The quiz has 10 questions per round which are randomized so the user can play many times. There is audio and visual feedback.
 
-Welcome to ![an image of The Country Quiz website](image.jpg)
+Welcome to <a href="https://bpstephanie.github.io/The_Country_Quiz/">The Country Quiz</a>
+
+
+![Responsive Mockup](media/responsive-mockup.png)
 
 ## Contents
 * [**User Experience UX**](<#user-experience-ux>)
@@ -34,8 +37,15 @@ Welcome to ![an image of The Country Quiz website](image.jpg)
 ### Wireframes
 ### Site Structure
 ### Design Choices
-### Typography
-### Colour Scheme
+ - ### Typography
+ The fonts chosen were 'Rubik Mono One' for the main heading and 'Rubik' for the rest of the text in the quiz. Their fall back fonts are sans-serif.
+
+  * 'Rubik Mono One' was chosen for its' readability whilst also being fun.
+  * 'Rubik' was chosen for the text for its compatability with the heading font.
+ - ### Colour Scheme
+   The colours chosen were to crerate a fun environment whilst creating contrast for easy viewing. A bright blue and a light blue was chosen for the background and game background. Brown for the username label, question counter and score area. Coral and off white for the game buttons and black for the outline.
+
+![Colour Palette](media/colour-palette.png)
 
 # Features
 ### Future Features
