@@ -91,7 +91,6 @@ form {
 .modal {
     background-color: rgb(17, 165, 244);
     text-align: center;
-    display: none;
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -119,6 +118,10 @@ form {
     justify-content: space-between;
 }
 /* How to play modal */
+#howtoplay-modal {
+    display: none;
+}
+
 #close-btn {
     color: rgb(194, 17, 17);
     float: right;

@@ -1,3 +1,21 @@
+// Opening screen
+const modal = document.getElementById('my-modal');
+const htpButton = document.getElementById('htp-btn');
+const lgsButton = document.getElementById('lgs-btn');
+const howToPlayModal = document.getElementById('howtoplay-modal');
+const closeButton = document.getElementById('close-btn')
+
+lgsButton.onclick = function() {
+  modal.style.display = "none";
+};
+
+htpButton.onclick = function() {
+  howToPlayModal.style.display = "block";
+};
+
+closeButton.onclick = function(){
+  howToPlayModal.style.display = "none";
+}
 // Variables
 const submit = document.getElementById("submit");
 const startButton = document.getElementById("start-btn");
