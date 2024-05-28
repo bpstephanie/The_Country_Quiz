@@ -140,7 +140,7 @@ function incrementWrongScore() {
  * This function shows the end screen
  */
 function toEndScreen() {
-  if (score >= 5) {
+  if (score >= 6) {
     questionElement.innerText = `You scored ${score}/10. \n Well done!`;
   } else {
     questionElement.innerText = `You scored ${wrongScore} incorrect answers.\n Bad luck, better luck next time!`;
