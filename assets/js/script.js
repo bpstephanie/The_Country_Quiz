@@ -23,8 +23,7 @@ const questionElement = document.getElementById("question");
 const answerButton = Array.from(document.getElementsByClassName("answer-btn"));
 const correctScore = document.getElementById("correct-score");
 const wrongScoreText = document.getElementById("incorrect-score");
-const questionCounterText = document.getElementById('questionCounter');
-const endScreenContainer = document.getElementById('endscreen-container');
+const questionCounterText = document.getElementById('question-counter');
 
 const maxQuestions = 10;
 let currentQuestionIndex = {};
@@ -125,7 +124,6 @@ answerButton.forEach(choice => {
       loseSound.play();
       selectedChoice.style.borderColor = "red";
       selectedChoice.style.color = "red";
-      console.log(answerButton[currentQuestionIndex.answer]);
       incrementWrongScore();
     }
 

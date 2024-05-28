@@ -54,7 +54,8 @@
     <div id="howtoplay-modal" class="modal">
         <div class="htp-modal-content">
             <span id="close-btn">&times;</span><br>
-            <h3>Instructions</h3><hr>
+            <h3>Instructions</h3>
+            <hr>
             <p>You will be given 10 random questions about South America. Each question will have 12 multiple choice
                 answers
                 which are the 12 countries in South America.</p>
@@ -67,16 +68,19 @@
 
     <!-- Quiz area -->
     <div class="game-container">
+
+        <!-- Question counter and question area -->
         <div id="hud-item">
             <p class="hud-prefix">
                 Question
             </p>
-            <h2 class="hud-main-text" id="questionCounter">0/10</h2>
+            <h2 class="hud-main-text" id="question-counter">0/10</h2>
         </div>
         <audio class="sound-btn" id="win-sound" src="assets/sounds/tadaa_trimmed.mp3"></audio>
         <audio class="sound-btn" id="lose-sound" src="assets/sounds/wrong-trimmed.mp3"></audio>
         <div id="question"></div>
 
+        <!-- Answer buttons -->
         <div class="country-buttons">
             <button class="answer-btn" id="btn--argentina" data-number="1">Argentina</button>
             <button class="answer-btn" id="btn--bolivia" data-number="2">Bolivia</button>
@@ -91,14 +95,15 @@
             <button class="answer-btn" id="btn--uruguay" data-number="11">Uruguay</button>
             <button class="answer-btn" id="btn--venezuela" data-number="12">Venezuela</button>
         </div>
+
+        <!-- Score area -->
         <div class="score-area">
             <p class="scores">Correct Answers <span id="correct-score"></span></p>
             <p class="scores">Incorrect Answers <span id="incorrect-score"></span></p>
         </div>
-        <!--<div class="next-container">
-            <button id="restart-btn"></button>
-        </div>-->
     </div>
+
+    <!-- Footer -->
     <footer>
         <ul id="socialmedia-icons">
             <li><a href="https://www.linkedin.com/in/stephanie-bell-529a362b/" target="_blank"
@@ -114,7 +119,7 @@
     <!-- JavaScript Questions-->
     <script src="assets/js/quiz.js"></script>
     <!-- JavaScript Main-->
-    <script type="module" src="assets/js/script.js" defer></script>
+    <script type="module" src="assets/js/script.js"></script>
     <noscript>Your browser does not support JavaScript!</noscript>
 </body>
 
