@@ -835,14 +835,4 @@ const questions =  [
     choice12: "Venezuela",
     answer: 11
   },  
-  ]
-
-function displayHighScore() {
-
-}
-
-function playSounds() {
-    
-}
-
-console.log("Hello from quiz");
+  ];

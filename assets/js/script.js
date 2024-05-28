@@ -1,7 +1,7 @@
 // Variables
 const submit = document.getElementById("submit");
 const startButton = document.getElementById("start-btn");
-const questionElement = document.getElementById("question")
+const questionElement = document.getElementById("question");
 const answerButton = Array.from(document.getElementsByClassName("answer-btn"));
 const correctScore = document.getElementById("correct-score");
 const wrongScoreText = document.getElementById("incorrect-score");
@@ -15,7 +15,6 @@ let score = 0;
 let wrongScore = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-let finalTally = document.getElementById('final-score')
 
 // Used this code to implement audio feedback to users https: //noaheakin.medium.com/adding-sound-to-your-js-web-app-f6a0ca728984#:~:text=The%20simplest%20way%20to%20add,starts%20playing%20the%20current%20audio.
 let winSound = document.querySelector('#win-sound');
@@ -35,8 +34,8 @@ function enterUsername() {
 
 
   if (username === '' || username.length < 3 || username.length > 10) {
-    alert('Please enter a valid username of 3 - 10 characters')
-    startButton.style.visibility = "hidden"
+    alert('Please enter a valid username of 3 - 10 characters');
+    startButton.style.visibility = "hidden";
   } else {
     usernameSubmitted = true;
     let label = document.getElementById('label');
@@ -103,7 +102,7 @@ answerButton.forEach(choice => {
     if (selectedAnswer == correctAnswer) {
       winSound.play();
       selectedChoice.style.borderColor = "green";
-      selectedChoice.style.color = "green"
+      selectedChoice.style.color = "green";
       incrementScore();
     } else {
       selectedChoice.style.borderColor = "red";
