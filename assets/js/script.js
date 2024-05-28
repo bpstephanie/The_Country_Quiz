@@ -59,7 +59,9 @@ function enterUsername() {
 function startGame() {
   questionCounter = 0;
   score = 0;
+  wrongScore = 0;
   correctScore.innerHTML = score;
+  wrongScoreText.innerHTML = wrongScore;
   availableQuestions = [...questions];
   getNewQuestion();
 }
@@ -126,9 +128,7 @@ answerButton.forEach(choice => {
  * This function increases correct answers
  */
 function incrementScore() {
-
-  /*let oldScore = parseInt(correctScore.innerText);
-  document.getElementById('correct-score').innerText = ++oldScore;*/
+  
   score += 1;
   correctScore.innerText = score;
 }
@@ -140,10 +140,6 @@ function incrementWrongScore() {
 
   wrongScore += 1;
   wrongScoreText.innerText = wrongScore;
-}
-
-function finalScore() {
-
 }
 
 /**
@@ -160,3 +156,7 @@ function toEndScreen() {
 startButton.addEventListener("click", function () {
   startGame();
 });
+
+restartButton.addEventListener("click", function () {
+  startGame();
+})
