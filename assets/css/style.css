@@ -305,15 +305,17 @@ footer {
 
 /* Media query: tablets and up */
 @media (min-width: 768px) {
+    /* Heading */
     h1 {
         font-size: 300%;
         margin-bottom: 4%;
     }
-
+    /* Start game buttons */
     .btn-container {
         margin-bottom: 3%;
     }
 
+    /* Submit and start buttons */
     .initial-btn-container {
         margin-bottom: 3%;
     }
@@ -322,11 +324,13 @@ footer {
         margin: 2% 5% 2% 5%;
     }
 
+    /* Modal */
     .modal-content  {
         margin: 20% auto;
         padding: 5%;
     }
 
+    /* How to play modal */
     .htp-modal-content {
         margin: 20% auto;
         padding: 5%;
@@ -342,6 +346,7 @@ footer {
         font-size: 50px;
     }
 
+    /* Question counter and question area*/
     #question {
         padding: 2%;
     }
@@ -353,6 +358,7 @@ footer {
         -webkit-text-stroke-width: 2px;
     }
 
+    /* Answer buttons*/
     .country-buttons {
         padding: 3%;
     }
@@ -360,20 +366,24 @@ footer {
 
 /* Media query: laptops and desktops and up */
 @media (min-width: 992px) {
-/* Heading */
+    /* Heading */
     h1 {
         font-size: 400%;
         margin: 2%;
     }
+
+    /* Start game buttons */
     .initial-btn-container {
         margin-bottom: 3%;
     }
 
+    /* Modal */
     .modal-content  {
         margin: 10% auto;
         width: 60%;
     }
 
+    /* How to play modal */
     .htp-modal-content {
         margin: 10% auto;
         width: 60%;
@@ -388,10 +398,12 @@ footer {
         font-size: 60px;
     }
 
+    /* Question counter and question area */
     #question {
         font-size: 200%;
     }
 
+    /* Answer buttons */
     .answer-btn {
         width: 190px;
         height: 150px;
