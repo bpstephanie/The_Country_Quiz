@@ -40,6 +40,7 @@ form {
 #label {
     font-size: 150%;
     color: rgb(83, 24, 6);
+    text-align: center;
 }
 
 #username {
@@ -201,7 +202,7 @@ form {
 
 /* Score area */
 .score-area {
-    padding: 2% 2% 5% 2%;
+    padding: 2%;
     font-size: 110%;
     text-align: center;
     font-family: 'Rubik', sans-serif;
@@ -212,17 +213,7 @@ form {
     margin: 1%;
 }
 
-/* End screen container */
-#endscreen-container {
-    background-color: white;
-    border: solid 2px black;
-    margin: 5% 10%;
-    text-align: center;
-    position: relative;
-    bottom: 400px;
-    padding: 10%;
-}
-
+/* Restart button */
 .next-container {
     display: flex;
     justify-content: center;
@@ -239,6 +230,7 @@ form {
     color: white;
     font-size: 150%;
     cursor: pointer;
+    margin-bottom: 3%;
 }
 
 #restart-btn:hover {
@@ -288,6 +280,10 @@ footer {
         margin-bottom: 3%;
     }
 
+    .btn-container {
+        margin: 2% 5% 2% 5%;
+    }
+
     .question-area {
         padding: 2%;
     }
@@ -302,12 +298,6 @@ footer {
     .country-buttons {
         padding: 3%;
     }
-
-    #endscreen-container {
-        margin: 5% 20%;
-        position: relative;
-        bottom: 450px;
-    }
 }
 
 /* Media query: laptops and desktops and up */
@@ -315,6 +305,7 @@ footer {
 
     h1 {
         font-size: 400%;
+        margin: 2%;
     }
     .initial-btn-container {
         margin-bottom: 3%;
@@ -325,11 +316,5 @@ footer {
         height: 150px;
         font-size: 150%;
         -webkit-text-stroke-width: 2px;
-    }
-
-    #endscreen-container {
-        margin: 5% 30%;
-        position: relative;
-        bottom: 600px;
     }
 }
