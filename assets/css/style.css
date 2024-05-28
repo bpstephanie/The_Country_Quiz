@@ -213,30 +213,6 @@ form {
     margin: 1%;
 }
 
-/* Restart button */
-.next-container {
-    display: flex;
-    justify-content: center;
-}
-
-#restart-btn {
-    width: 140px;
-    text-align: center;
-    border: 4px solid rgb(241, 243, 240);
-    background-color: rgb(240, 68, 16);
-    border-radius: 2px;
-    text-transform: uppercase;
-    transition-duration: 0.4s;
-    color: white;
-    font-size: 150%;
-    cursor: pointer;
-    margin-bottom: 3%;
-}
-
-#restart-btn:hover {
-    border: solid 5px black;
-}
-
 /* Footer */
 footer {
     color: #ffffff;

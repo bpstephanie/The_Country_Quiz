@@ -3,7 +3,6 @@ const submit = document.getElementById("submit");
 const startButton = document.getElementById("start-btn");
 const questionElement = document.getElementById("question")
 const answerButton = Array.from(document.getElementsByClassName("answer-btn"));
-const restartButton = document.getElementById("restart-btn");
 const correctScore = document.getElementById("correct-score");
 const wrongScoreText = document.getElementById("incorrect-score");
 const questionCounterText = document.getElementById('questionCounter');
@@ -17,7 +16,6 @@ let wrongScore = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 let finalTally = document.getElementById('final-score')
-restartButton.innerText = "Restart";
 
 // Used this code to implement audio feedback to users https: //noaheakin.medium.com/adding-sound-to-your-js-web-app-f6a0ca728984#:~:text=The%20simplest%20way%20to%20add,starts%20playing%20the%20current%20audio.
 let winSound = document.querySelector('#win-sound');
@@ -31,8 +29,6 @@ submit.addEventListener('click', enterUsername);
 /**
  * Function to allow user to enter a username
  */
-// Username setting
-
 function enterUsername() {
   let usernameInput = document.getElementById("username");
   let username = usernameInput.value.trim();
@@ -51,7 +47,6 @@ function enterUsername() {
   }
 }
 
-// Functions
 // Followed YouTube Tutorial for basic set up https://www.youtube.com/watch?v=zZdQGs62cR8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=4 
 /**
  * This function starts the game
@@ -64,6 +59,7 @@ function startGame() {
   wrongScoreText.innerHTML = wrongScore;
   availableQuestions = [...questions];
   getNewQuestion();
+  startButton.innerHTML = "RESTART";
 }
 
 /**
@@ -128,7 +124,6 @@ answerButton.forEach(choice => {
  * This function increases correct answers
  */
 function incrementScore() {
-  
   score += 1;
   correctScore.innerText = score;
 }
@@ -137,7 +132,6 @@ function incrementScore() {
  * This function increases wrong answers
  */
 function incrementWrongScore() {
-
   wrongScore += 1;
   wrongScoreText.innerText = wrongScore;
 }
@@ -156,7 +150,3 @@ function toEndScreen() {
 startButton.addEventListener("click", function () {
   startGame();
 });
-
-restartButton.addEventListener("click", function () {
-  startGame();
-})
