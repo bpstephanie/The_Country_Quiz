@@ -75,6 +75,7 @@ form {
     color: rgb(241, 243, 240);
     font-size: 150%;
     cursor: pointer;
+    margin: 3%;
 }
 
 .initial-btn:hover {
@@ -84,6 +85,63 @@ form {
 #howtoplay--btn {
     height: 100%;
     align-self: flex-end;
+}
+
+/* Modal */
+.modal {
+    background-color: rgb(17, 165, 244);
+    text-align: center;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.modal-content  {
+    margin: 40% auto;
+    background-color: rgb(165, 226, 241);
+    border-radius: 30px;
+    padding: 10% 5%;
+    width: 90%;
+    border: 4px solid rgb(241, 243, 240);
+}
+
+.modal-content p {
+    font-size: 150%;
+    padding-bottom: 10%;
+}
+
+#modal-btn {
+    display: flex;
+    justify-content: space-between;
+}
+/* How to play modal */
+#close-btn {
+    color: rgb(194, 17, 17);
+    float: right;
+    font-size: 40px;
+}
+
+#close-btn:hover {
+    cursor: pointer;
+}
+
+.htp-modal-content {
+    color: rgb(83, 24, 6);
+    margin: 40% auto;
+    background-color: rgb(165, 226, 241);
+    border-radius: 30px;
+    padding: 5%;
+    width: 90%;
+    border: 4px solid rgb(241, 243, 240);
+    font-size: 90%;
+}
+
+.htp-modal-content h3 {
+    font-size: 190%;
 }
 
 /* Main game area */
