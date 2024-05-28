@@ -35,7 +35,7 @@ function enterUsername() {
 
   if (username === '' || username.length < 3 || username.length > 10) {
     alert('Please enter a valid username of 3 - 10 characters');
-    startButton.style.visibility = "hidden";
+    return;
   } else {
     usernameSubmitted = true;
     let label = document.getElementById('label');
