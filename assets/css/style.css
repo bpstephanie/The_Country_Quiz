@@ -100,6 +100,7 @@ form {
     font-weight: 700;
     padding-left: 15%;
     text-transform: uppercase;
+    color: rgb(69, 67, 67);
 }
 
 .hud-prefix {
@@ -211,6 +212,7 @@ form {
     text-align: center;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
+    color: rgb(69, 67, 67);
 }
 
 .scores {
