@@ -45,7 +45,6 @@ form {
     color: rgb(83, 24, 6);
     text-align: center;
     text-transform: uppercase;
-    background-color: rgba(165, 226, 241, 0.9);
     padding: 3% 3% 0 3%;
 }
 
@@ -384,6 +383,9 @@ footer {
     }
 
     /* Start game buttons */
+    #label {
+        background-color: rgba(165, 226, 241, 0.9);
+    }
 
     /* Modal */
     .modal-content  {
