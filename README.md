@@ -103,7 +103,7 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
   - ### Welcome Message Modal
   - ### How To Play Modal
   - ### Main Game Page
-    - Main Heading
+    * Main Heading
     
     A large stylized font which is fully responsive to different screen sizes.
 
@@ -113,9 +113,9 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
     Mobile main heading:\
 ![Main Heading Mobile](media/site-screenshots//main-heading-mobile.png)
 
-    - Username 
+  * Username 
 
-     - In order for a user to play the quiz, a username must be entered. The username has to be 3 - 10 character long and must be letters.
+  - In order for a user to play the quiz, a username must be entered. The username has to be 3 - 10 character long and must be letters.
 
     Username Desktop:
 ![Username Area Desktop](media/site-screenshots/username.png)
@@ -126,15 +126,20 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
 Invalid Username Alert: \
 ![Invalid Username Alert](media/site-screenshots/invalid-username.png)
 
-    -  Start Game Button
-     - Once a username has been entered, a good luck message is shown and the 'Start' Button appears for the user to begin.#
+  * Start Game Button
+  - Once a username has been entered, a good luck message is shown and the 'Start' Button appears for the user to begin.#
 
 Successful Username Input Message and Start Button: 
 ![Successful Username Input Message and Start Button](media/site-screenshots/successful-input.png) 
 
 Button Hover Effect:
 ![Button Hover Effect](media/site-screenshots/button-hover.png)
-    - Main Game Area
+
+  * Restart Button
+  - Once the start button has been pressed, the text changes to 'Restart. This allows the user to restart the game any time they want. Once pressed, the score board and question counter will reset and a new set of random questions will be allocated to the round.
+
+  * Main Game Area
+
       * Question Counter
       * Question Area
       * Answer Buttons
