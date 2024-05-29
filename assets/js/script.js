@@ -3,7 +3,7 @@ const modal = document.getElementById('my-modal');
 const htpButton = document.getElementById('htp-btn');
 const lgsButton = document.getElementById('lgs-btn');
 const howToPlayModal = document.getElementById('howtoplay-modal');
-const closeButton = document.getElementById('close-btn')
+const closeButton = document.getElementById('close-btn');
 
 lgsButton.onclick = function() {
   modal.style.display = "none";
@@ -15,7 +15,8 @@ htpButton.onclick = function() {
 
 closeButton.onclick = function(){
   howToPlayModal.style.display = "none";
-}
+};
+
 // Variables
 const submit = document.getElementById("submit");
 const startButton = document.getElementById("start-btn");
@@ -60,7 +61,7 @@ function enterUsername() {
     label.innerHTML = `Good luck, ${username}`;
     usernameInput.style.visibility = "hidden";
     submit.style.visibility = "hidden";
-    startButton.style.display = "block"
+    startButton.style.display = "block";
   }
 }
 
@@ -98,20 +99,20 @@ function getNewQuestion() {
   questionElement.innerHTML = currentQuestionIndex.question;
 
   answerButton.forEach(choice => {
-    const number = choice.dataset['number'];
+    const number = choice.dataset.number;
     choice.innerText = currentQuestionIndex['choice' + number];
   });
 
   availableQuestions.splice(randomIndex, 1);
   acceptingAnswers = true;
-};
+}
 
 answerButton.forEach(choice => {
   choice.addEventListener("click", event => {
     if (!acceptingAnswers) return;
     acceptingAnswers = false;
     const selectedChoice = event.target;
-    const selectedAnswer = selectedChoice.dataset["number"];
+    const selectedAnswer = selectedChoice.dataset.number;
     const correctAnswer = currentQuestionIndex.answer;
 
     // Highlights the button border and text color green if correct and red if incorrect 

@@ -7,12 +7,14 @@
 
 /* General styles */
 body {
-    background-color: rgb(17, 165, 244);
+    background-color: rgba(17, 165, 244);
     font-family: 'Rubik', sans-serif;
+    background: url("../images/llama-background.png") no-repeat center center/cover;
 }
 
 /* Heading */
 h1 {
+    background-color: rgba(17, 165, 244, 0.8);
     font-family: 'Rubik Mono One', sans-serif;
     letter-spacing: 0.2em;
     font-size: 200%;
@@ -26,9 +28,10 @@ h1 {
 
 /* Start game buttons */
 .btn-container {
+    background-color: rgba(165, 226, 241, 0.9);
     display: flex;
-    justify-content: space-around;
-    margin: 5% 5% 10% 5%;
+    justify-content: center;
+    margin: 6% 20%;
     max-width: 100%;
 }
 
@@ -38,23 +41,26 @@ form {
 }
 
 #label {
-    font-size: 150%;
+    font-size: 110%;
     color: rgb(83, 24, 6);
     text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(165, 226, 241, 0.9);
+    padding: 3% 3% 0 3%;
 }
 
 #username {
-    border-radius: 5%;
-    background-color: rgb(240, 68, 16);
-    border: 2px solid rgb(241, 243, 240);
+    border-radius: 5px;
+    border:4px solid rgb(83, 24, 6);
+    background-color: rgb(241, 243, 240);
     height: 30px;
     color: rgb(241, 243, 240);
     font-size: 120%;
-    margin: 5%;
+    margin: 2% 5%;
 }
 
 ::placeholder {
-    color: rgba(241, 243, 240, 0.5);
+    color: rgb(83, 24, 6);
     font-size: 100%;
 }
 
@@ -90,6 +96,7 @@ form {
 /* Modal */
 .modal {
     background-color: rgb(17, 165, 244);
+    background: url("../images/llama-background.png") no-repeat center center/cover;
     text-align: center;
     position: fixed;
     z-index: 1;
@@ -287,7 +294,9 @@ footer {
     flex-flow: row wrap;
     justify-content: space-evenly;
     font-size: 200%;
+    background-color: rgb(17, 165, 244);
     list-style-type: none;
+    padding: 2%;
 }
 
 #socialmedia-icons i {
@@ -312,16 +321,12 @@ footer {
     }
     /* Start game buttons */
     .btn-container {
-        margin-bottom: 3%;
+        margin: 6% 30%;
     }
 
     /* Submit and start buttons */
     .initial-btn-container {
         margin-bottom: 3%;
-    }
-
-    .btn-container {
-        margin: 2% 5% 2% 5%;
     }
 
     /* Modal */
@@ -373,9 +378,6 @@ footer {
     }
 
     /* Start game buttons */
-    .initial-btn-container {
-        margin-bottom: 3%;
-    }
 
     /* Modal */
     .modal-content  {
