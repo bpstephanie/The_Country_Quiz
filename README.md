@@ -98,19 +98,48 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
  [Back To Top](<#contents>)
 
 # Features
+  ## Existing Features
 
- ### Welcome Message Modal
- ### How To Play Modal
- ### Main Game Page
-    * Main Heading
-    * Username
-    * Start Game Button
-    * Main Game Area
+  - ### Welcome Message Modal
+  - ### How To Play Modal
+  - ### Main Game Page
+    - Main Heading
+    
+    A large stylized font which is fully responsive to different screen sizes.
+
+    Desktop main heading:
+![Main Heading Desktop](media/site-screenshots/main-heading.png)
+
+    Mobile main heading:\
+![Main Heading Mobile](media/site-screenshots//main-heading-mobile.png)
+
+    - Username 
+
+     - In order for a user to play the quiz, a username must be entered. The username has to be 3 - 10 character long and must be letters.
+
+    Username Desktop:
+![Username Area Desktop](media/site-screenshots/username.png)
+
+    Username Mobile: \
+![Username Area Desktop](media/site-screenshots/username-mobile.png)
+
+Invalid Username Alert: \
+![Invalid Username Alert](media/site-screenshots/invalid-username.png)
+
+    -  Start Game Button
+     - Once a username has been entered, a good luck message is shown and the 'Start' Button appears for the user to begin.#
+
+Successful Username Input Message and Start Button: 
+![Successful Username Input Message and Start Button](media/site-screenshots/successful-input.png) 
+
+Button Hover Effect:
+![Button Hover Effect](media/site-screenshots/button-hover.png)
+    - Main Game Area
       * Question Counter
       * Question Area
       * Answer Buttons
-    * Score Area
-    * Footer
+    - Score Area
+    - Footer
   
  [Back To Top](<#contents>)
 
