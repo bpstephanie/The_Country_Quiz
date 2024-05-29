@@ -154,6 +154,12 @@ form {
     font-size: 190%;
 }
 
+.htp-modal-content hr {
+    background: rgb(83, 24, 6);
+    height: 10px;
+    margin: 0 0 5% 0;
+}
+
 /* Main game area */
 .game-container {
     background-color: rgb(165, 226, 241);
