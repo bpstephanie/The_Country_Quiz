@@ -17,6 +17,18 @@ closeButton.onclick = function(){
   howToPlayModal.style.display = "none";
 };
 
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    howToPlayModal.style.display = "none";
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    modal.style.display = "none";
+  }
+});
+
 // Variables
 const submit = document.getElementById("submit");
 const startButton = document.getElementById("start-btn");
@@ -51,7 +63,6 @@ function enterUsername() {
   let usernameInput = document.getElementById("username");
   let username = usernameInput.value.trim();
 
-
   if (username === '' || username.length < 3 || username.length > 10 ||/\d/.test(username)) {
     alert('Please enter a valid username of 3 - 10 letters');
     return;
@@ -63,7 +74,7 @@ function enterUsername() {
     submit.style.visibility = "hidden";
     startButton.style.display = "block";
   }
-}
+};
 
 // Followed YouTube Tutorial for basic set up https://www.youtube.com/watch?v=zZdQGs62cR8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=4 
 /**
@@ -160,7 +171,7 @@ function toEndScreen() {
   if (score >= 6) {
     questionElement.innerText = `You scored ${score}/10. \n Well done!`;
   } else {
-    questionElement.innerText = `You scored ${wrongScore} incorrect answers.\n Bad luck, better luck next time!`;
+    questionElement.innerText = `You scored ${score}/10.\n Bad luck, better luck next time!`;
   }
 }
 
