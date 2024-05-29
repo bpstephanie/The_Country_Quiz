@@ -239,7 +239,6 @@ The folloowing languages were used to create and develop this website:
 * [CloudConvert](https://cloudconvert.com/png-to-webp)
 * [TinyPNG](https://tinypng.com/)
 
-
  [Back To Top](<#contents>)
 
 # Testing
@@ -290,30 +289,29 @@ The steps to clone a project from GitHub are as follows:
 * Fonts: [Google Fonts](https://fonts.google.com/)
 * Icons: [Fontawesome](https://fontawesome.com/)
 * Colour Palettes: [Coolors](https://www.bbcgoodfood.com/)
-* Mock-up: [Am I Responsive](https://techsini.com/)
+* Mock-up: [Am I Responsive](https://ui.dev/amiresponsive)
 * Chrome for Developers: [Dev Tools](https://developer.chrome.com/docs/devtools)
 
-* The polka-dot background was learned from [30 Seconds of Code](https://www.30secondsofcode.org/css/s/polka-dot-pattern/). 
-
-* Instructions on how to implement the text overlay on the brain food gallery was taken from [Banner Bear](https://www.bannerbear.com/blog/)
-
-* Help with flexbox came from [CSS Tricks](https://css-tricks.com/)
-
-* Help with troubleshooting came from [Stack Overflow](https://stackoverflow.com/)
+* The code to create the modals was inspired by [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp).
+* The code to implement audio in JavaScript  by [Noah-Ekin] (https://noaheakin.medium.com/).adding-sound-to-your-js-web-app-f6a0ca728984#:~:text=The%20 simplest%20way%20to%20 add,starts%20 playing%20the%20 current%20audio. let winSound = document.querySelector('#win-sound').
+* This YouTube tutorial was followed for the basic setup of the quiz[James Q Quick](https://www.youtube.com/watch?v=zZdQGs62cR8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=4).
+* The code to randomize quiz questions was inspired by [She Codes](https://www.shecodes.io/athena/10246-how-to-show-random-questions-in-a-quiz-using-javascript).
+* The code for the score area was inspired by the Code Institute Love Maths Project.
 
 [Back To Top](<#contents>)
 
 ### Content
 
-The information on the home page is from [Nottingham.ac.uk](https://www.nottingham.ac.uk/currentstudents/wellbeing/healthyu/index.aspx) and [Sleep Foundation](https://www.sleepfoundation.org/nutrition).
+* The majority of the quiz question and answer content came from myself. A few questions were fact checked with [Visit South America](https://visitsouthamerica.co/)
 
-The recipes on the recipes page are from [BBC Good Food](https://www.bbcgoodfood.com/) and [Eating Well](https://www.eatingwell.com/)
 
 [Back To Top](<#contents>)
 
 ### Media
 
-The images are from [Pexels](https://www.pexels.com/), [Pixabay](https://pixabay.com/) and [BBC Good Food](https://www.bbcgoodfood.com/).
+The images are from [Pixabay](https://pixabay.com/) and [Flag Colour Codes](https://www.flagcolorcodes.com/).
+
+The flag images were made opaque with [OnlinePNGTools](https://onlinepngtools.com/change-png-opacity#:~:text=World's%20simplest%20online%20Portable%20Network,%2C%20quick%2C%20and%20very%20powerful.).
 
 The images were optimised with [Tinypng](https://tinypng.com/).
 
@@ -321,7 +319,7 @@ The images were optimised with [Tinypng](https://tinypng.com/).
 
 ## Acknowledgements
 
-Clean Crave has been completed as a Portfolio 1 Project, part of the Full Stack Software Developer Diploma at Code Institute. I would like to thank my Code Institute mentor,  Precious Ijege, the Slack community, and everyone at Code Institute for their help and support. 
+The Country Quiz has been completed as a Portfolio 2 Project, part of the Full Stack Software Developer Diploma at Code Institute. I would like to thank my Code Institute mentor,  Precious Ijege, the Slack community, and everyone at Code Institute for their help and support. 
 
 Stephanie Bell 2024.
 

@@ -39,7 +39,7 @@ let wrongScore = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-// Used this code to implement audio feedback to users https: //noaheakin.medium.com/adding-sound-to-your-js-web-app-f6a0ca728984#:~:text=The%20simplest%20way%20to%20add,starts%20playing%20the%20current%20audio.
+// Used this code to implement audio feedback to users https://noaheakin.medium.com/adding-sound-to-your-js-web-app-f6a0ca728984#:~:text=The%20simplest%20way%20to%20add,starts%20playing%20the%20current%20audio.
 let winSound = document.querySelector('#win-sound');
 let loseSound = document.querySelector('#lose-sound');
 
