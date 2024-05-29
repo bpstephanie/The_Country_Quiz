@@ -319,7 +319,7 @@ The images were optimised with [Tinypng](https://tinypng.com/).
 
 ## Acknowledgements
 
-The Country Quiz has been completed as a Portfolio 2 Project, part of the Full Stack Software Developer Diploma at Code Institute. I would like to thank my Code Institute mentor,  Precious Ijege, the Slack community, and everyone at Code Institute for their help and support. 
+The Country Quiz has been completed as a Portfolio 2 Project, part of the Full Stack Software Developer Diploma at Code Institute. I would like to thank my Code Institute mentor,  Precious Ijege for his advice and support, the Slack community, and everyone at Code Institute for their feedback and guidance. 
 
 Stephanie Bell 2024.
 

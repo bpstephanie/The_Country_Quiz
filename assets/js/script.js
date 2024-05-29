@@ -67,7 +67,7 @@ function enterUsername() {
     submit.style.visibility = "hidden";
     startButton.style.display = "block";
   }
-};
+}
 
 // Followed YouTube Tutorial for basic set up https://www.youtube.com/watch?v=zZdQGs62cR8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=4 
 /**

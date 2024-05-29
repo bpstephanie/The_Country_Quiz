@@ -834,5 +834,22 @@ const questions =  [
     choice11: "Uruguay",
     choice12: "Venezuela",
     answer: 11
-  },  
+  },
+  {
+    question: "Which country's official currency is the USD($)?",
+        
+    choice1: "Argentina",
+    choice2: "Bolivia",
+    choice3: "Brazil",
+    choice4: "Chile", 
+    choice5: "Colombia",
+    choice6: "Ecuador", 
+    choice7: "Guyana", 
+    choice8: "Paraguay", 
+    choice9: "Peru", 
+    choice10: "Suriname",
+    choice11: "Uruguay",
+    choice12: "Venezuela",
+    answer: 6
+  }, 
   ];
