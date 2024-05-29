@@ -16,16 +16,9 @@ htpButton.onclick = function() {
 closeButton.onclick = function(){
   howToPlayModal.style.display = "none";
 };
-
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
-    howToPlayModal.style.display = "none";
-  }
-});
-
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Enter') {
-    modal.style.display = "none";
+    howToPlayModal.style.display = "none";    
   }
 });
 
