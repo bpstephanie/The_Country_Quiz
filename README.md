@@ -1,5 +1,5 @@
 # The Couuntry Quiz
-The Country Quiz is an interactive JavaScript game to test users knowledge about South America in a fun way. Usernames, correct answers and incorrect answers are recorded. The quiz has 10 questions per round which are randomized so the user can play many times. There is audio and visual feedback.
+The Country Quiz is an interactive JavaScript game to test users knowledge about South America in a fun way. Usernames, correct answers and incorrect answers are recorded. The quiz has 10 questions per round which are randomized so the user can play many times. There is audio and visual feedback for both correct and incorrect answers.
 
 Welcome to <a href="https://bpstephanie.github.io/The_Country_Quiz/">The Country Quiz</a>
 
@@ -36,12 +36,23 @@ Welcome to <a href="https://bpstephanie.github.io/The_Country_Quiz/">The Country
 # Design
 ### Wireframes
 ### Site Structure
+The Country Quiz consists of one page, the [Main Game Page](index.html), and two pop-up windows, The How To Play Modal and The Welcome Message Modal. 
+The [Main Game Page](index.html) has the following areas:
+ - The username area: where the user is asked to enter their name.
+ - The Quiz area: which has a question counter, a space for where the question is displayed, the answer button area and the score area.
+ - The footer: where links to the developers' LinkedIn and GitHub are.
+
 ### Design Choices
+
  - ### Typography
  The fonts chosen were 'Rubik Mono One' for the main heading and 'Rubik' for the rest of the text in the quiz. Their fall back fonts are sans-serif.
 
+![Rubik Mono One](media/rubik-mono-one.png)
+![Rubik](media/rubik.png)
+
   * 'Rubik Mono One' was chosen for its' readability whilst also being fun.
   * 'Rubik' was chosen for the text for its compatability with the heading font.
+
  - ### Colour Scheme
    The colours chosen were to crerate a fun environment whilst creating contrast for easy viewing. A bright blue and a light blue was chosen for the background and game background. Brown for the username label, question counter and score area. Coral and off white for the game buttons and black for the outline.
 
