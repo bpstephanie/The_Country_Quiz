@@ -9,17 +9,19 @@ Welcome to <a href="https://bpstephanie.github.io/The_Country_Quiz/">The Country
 ## Contents
 * [**User Experience UX**](<#user-experience-ux>)
   * [User Stories](<#user-stories>)
-* [**Design**](<#design>)
   * [Wireframes](<#wireframes>)
   * [Site Structure](<#site-structure>)
   * [Design Choices](<#design-choices>)
-  * [Typography](<#typography>)
-  * [Colour Scheme](<#colour-scheme>)
+    * [Typography](<#typography>)
+    * [Colour Scheme](<#colour-scheme>)
 * [**Features**](<#features>)
-  * [csfghnh]
-  * [sdcfvgbh]
+  * [Existing Features](<#existing-features>)
+    * [csfghnh]
+    * [sdcfvgbh]
   * [**Future Features**](<#future-features>)
 * [**Technologies Used**](<#technologies-used>)
+  * [Languages](<#languages>)
+  * [Resources and Tools](<#rescources-and-tools>)
 * [**Testing**](<#testing>)
 * [**Deployment**](<#deployment>)
   * [**To Deploy the Project**](<#to-deploy-the-project>)
@@ -48,6 +50,7 @@ Welcome to <a href="https://bpstephanie.github.io/The_Country_Quiz/">The Country
     - I want users to enjoy the quiz and feel challenged answering the questions.
     - I want users to play the quiz many times.
 
+[Back To Top](<#contents>)
 
 # Design
 ### Wireframes
@@ -55,6 +58,8 @@ Welcome to <a href="https://bpstephanie.github.io/The_Country_Quiz/">The Country
 The wireframes for The Country Quiz were created using [Balsamiq](https://balsamiq.com). As shown in the wireframes, the original topic for the quiz was Europe, however being that there are 44 countries, the concept of the answer buttons being the countries would have made for a more visually overwhelming game.
 
 ![The Country Quiz Wireframe](media/the-country-quiz-wireframe.png)
+
+[Back To Top](<#contents>)
 
 ### Site Structure
 
@@ -69,45 +74,76 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
     - The quiz area: which has a question counter, a space for where the question is displayed, the answer button area and the score area.
     - The footer: where links to the developers' LinkedIn and GitHub are.
 
+[Back To Top](<#contents>)
+
 ### Design Choices
 
  - ### Typography
  The fonts chosen were 'Rubik Mono One' for the main heading and 'Rubik' for the rest of the text in the quiz. Their fall back fonts are sans-serif.
 
-![Rubik Mono One](media/rubik-mono-one.png)
-![Rubik](media/rubik.png)
-
   * 'Rubik Mono One' was chosen for its' readability whilst also being fun.
+
+  ![Rubik Mono One](media/rubik-mono-one.png)
+
+
   * 'Rubik' was chosen for the text for its compatability with the heading font.
+
+  ![Rubik](media/rubik.png)
 
  - ### Colour Scheme
    The colours chosen were to crerate a fun environment whilst creating contrast for easy viewing. A bright blue and a light blue was chosen for the background and game background. Brown for the username label, question counter and score area. Coral and off white for the game buttons and black for the outline.
 
 ![Colour Palette](media/colour-palette.png)
 
+ [Back To Top](<#contents>)
+
 # Features
+
+ ### Welcome Message Modal
+ ### How To Play Modal
+ ### Main Game Page
+    * Main Heading
+    * Username
+    * Start Game Button
+    * Main Game Area
+      * Question Counter
+      * Question Area
+      * Answer Buttons
+    * Score Area
+    * Footer
+  
+ [Back To Top](<#contents>)
+
 ### Future Features
+
+ [Back To Top](<#contents>)
 
 # Technologies Used
 
 ### Languages
-The floowing languages were used to create and develop this website:
+
+The folloowing languages were used to create and develop this website:
+
 * HTML5 - provides the content and structure for the website.
 * CSS - provides the styling.
 * JavaScript - provides the responsive quiz elements
 
 ### Rescources and Tools
-* Balsamiq
-* Gitpod
-* Github
-* Favicon
-* DevTools
-* Google Fonts
-* Font Awesome
-* Am I Responsive
+* [Balsamiq](https://balsamiq.com/wireframes/)
+* [Gitpod](https://www.gitpod.io/#get-started) 
+* [Github](https://github.com/)
+* [Favicon](https://favicon.io/)
+* [DevTools](https://developer.chrome.com/docs/devtools)
+* [Google Fonts](https://fonts.google.com/)
+* [Font Awesome](https://fontawesome.com/)
+* [Am I Responsive](https://ui.dev/amiresponsive)
+
+ [Back To Top](<#contents>)
 
 # Testing
 Please refer [**_here_**](TESTING.md) for more information about testing on The Country Quiz.
+
+ [Back To Top](<#contents>)
 
 # Deployment
 This site was deployed to GitHub pages. The steps to deploy are as follows:
@@ -143,7 +179,9 @@ The steps to clone a project from GitHub are as follows:
 
 ![How To Clone](https://github.com/bpstephanie/Clean_Crave/blob/main/media/clone_1.png)
 
-### Credits
+ [Back To Top](<#contents>)
+
+## Credits 
 
 * Wireframes: [Balsamiq](https://balsamiq.com)
 * Favicon: [Favicon](https://favicon.io/)
@@ -153,3 +191,36 @@ The steps to clone a project from GitHub are as follows:
 * Mock-up: [Techsini](https://techsini.com/)
 * Chrome for Developers: [Dev Tools](https://developer.chrome.com/docs/devtools)
 
+* The polka-dot background was learned from [30 Seconds of Code](https://www.30secondsofcode.org/css/s/polka-dot-pattern/). 
+
+* Instructions on how to implement the text overlay on the brain food gallery was taken from [Banner Bear](https://www.bannerbear.com/blog/)
+
+* Help with flexbox came from [CSS Tricks](https://css-tricks.com/)
+
+* Help with troubleshooting came from [Stack Overflow](https://stackoverflow.com/)
+
+[Back To Top](<#contents>)
+
+### Content
+
+The information on the home page is from [Nottingham.ac.uk](https://www.nottingham.ac.uk/currentstudents/wellbeing/healthyu/index.aspx) and [Sleep Foundation](https://www.sleepfoundation.org/nutrition).
+
+The recipes on the recipes page are from [BBC Good Food](https://www.bbcgoodfood.com/) and [Eating Well](https://www.eatingwell.com/)
+
+[Back To Top](<#contents>)
+
+### Media
+
+The images are from [Pexels](https://www.pexels.com/), [Pixabay](https://pixabay.com/) and [BBC Good Food](https://www.bbcgoodfood.com/).
+
+The images were optimised with [Tinypng](https://tinypng.com/).
+
+[Back To Top](<#contents>)
+
+## Acknowledgements
+
+Clean Crave has been completed as a Portfolio 1 Project, part of the Full Stack Software Developer Diploma at Code Institute. I would like to thank my Code Institute mentor,  Precious Ijege, the Slack community, and everyone at Code Institute for their help and support. 
+
+Stephanie Bell 2024.
+
+ [Back To Top](<#contents>)
