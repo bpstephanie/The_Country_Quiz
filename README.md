@@ -35,12 +35,23 @@ Welcome to <a href="https://bpstephanie.github.io/The_Country_Quiz/">The Country
 
 # Design
 ### Wireframes
+
+The wireframes for The Country Quiz were created using [Balsamiq](https://balsamiq.com). As shown in the wireframes, the original topic for the quiz was Europe, however being that there are 44 countries, the concept of the answer buttons being the countries would have made for a more visually overwhelming game.
+
+![The Country Quiz Wireframe](media/the-country-quiz-wireframe.png)
+
 ### Site Structure
-The Country Quiz consists of one page, the [Main Game Page](index.html), and two pop-up windows, The How To Play Modal and The Welcome Message Modal. 
-The [Main Game Page](index.html) has the following areas:
- - The username area: where the user is asked to enter their name.
- - The Quiz area: which has a question counter, a space for where the question is displayed, the answer button area and the score area.
- - The footer: where links to the developers' LinkedIn and GitHub are.
+
+The Country Quiz consists of one page, the [Main Game Page](index.html), and two pop-up windows, the How To Play Modal and the Welcome Message Modal. 
+
+ - The How To Play Modal gives the user instructions for the quiz.
+
+ - The Welcome Message Modal is what users will see first when loading The Country Quiz. From this window, the user will be able to navigate to the HoW To Play Modal or the Main Game Page.
+
+- The [Main Game Page](index.html) has the following areas:
+    - The username area: where the user is asked to enter their name.
+    - The quiz area: which has a question counter, a space for where the question is displayed, the answer button area and the score area.
+    - The footer: where links to the developers' LinkedIn and GitHub are.
 
 ### Design Choices
 
