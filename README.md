@@ -19,16 +19,16 @@ Welcome to <a href="https://bpstephanie.github.io/The_Country_Quiz/">The Country
     * [Welcome Message Modal](#welcome-message-modal)
     * [How To Play Modal](<#how-to-play-modal>)
     * [Main Game Page](<#main-game-page>)
-      * [Main Heading](<#main-heading>)
-      * [Username](<#username>)
-      * [Start Game Button](<#start-game-button>)
-        * [Restart Button](<#restart-button>)
-      * [Main Game Area](<#main-game-area>)
-        * [Question Counter](<#question-counter>)
-        * [Question Area](<#question-area>)
-        * [Answer Buttons](<#answer-buttons>)
-        * [Score Area](<#score-area>)
-      * [Footer](<#footer>)
+    * [Main Heading](<#main-heading>)
+    * [Username](<#username>)
+    * [Start Game Button](<#start-game-button>)
+      * [Restart Button](<#restart-button>)
+    * [Main Game Area](<#main-game-area>)
+      * [Question Counter](<#question-counter>)
+      * [Question Area](<#question-area>)
+      * [Answer Buttons](<#answer-buttons>)
+      * [Score Area](<#score-area>)
+    * [Footer](<#footer>)
   * [**Future Features**](<#future-features>)
 * [**Technologies Used**](<#technologies-used>)
   * [Languages](<#languages>)
@@ -111,13 +111,13 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
   ## Existing Features
 
   - ### Welcome Message Modal
-    When the user first enters the site, a welcome modal message appears with two buttons, the 'How To Play' button which takes the user to the instructions for the quiz and the 'Let's get Started' button which closes the modal and takes the user to the [Main Game Page](index.html).
+    When the user first enters the site, a welcome modal message appears with two buttons, the 'How To Play' button which takes the user to the instructions for the quiz and the 'Let's get Started' button which closes the modal and takes the user to the [Main Game Page](<#main-game-page>).
 
     Welcome Message Modal Desktop:\
-    ![Welcome Message Modal Desktop](media/site-screenshots/welcome-modal.png)
+    ![Welcome Message Modal Desktop](<#media/site-screenshots/welcome-modal.png)
 
     Welcome Message Modal Mobile:\
-    ![Welcome Message Modal Mobile](media/site-screenshots/welcome-modal-mobile.png)
+    ![Welcome Message Modal Mobile](<#media/site-screenshots/welcome-modal-mobile.png)
 
   - ### How To Play Modal
     This modal gives instructions to the user on how to play the quiz. When exitting this pop-up they will be taken back to the [Welcome Message Modal](<#welcome-message-modal>).
@@ -211,6 +211,10 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
 
 ### Future Features
 
+  - Have difficulty levels, ranging from easy to expert.
+  - Have a high score functionality for users to play many times and track their scores.
+  - Have different topics, for example, a quiz on the countries in Africa or Asia.
+
  [Back To Top](<#contents>)
 
 # Technologies Used
@@ -219,9 +223,9 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
 
 The folloowing languages were used to create and develop this website:
 
-* HTML5 - provides the content and structure for the website.
-* CSS - provides the styling.
-* JavaScript - provides the responsive quiz elements
+* [HTML5](https://html.spec.whatwg.org/) - provides the content and structure for the website.
+* [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - provides the styling.
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript) - provides the responsive quiz elements.
 
 ### Rescources and Tools
 * [Balsamiq](https://balsamiq.com/wireframes/)
@@ -232,6 +236,9 @@ The folloowing languages were used to create and develop this website:
 * [Google Fonts](https://fonts.google.com/)
 * [Font Awesome](https://fontawesome.com/)
 * [Am I Responsive](https://ui.dev/amiresponsive)
+* [CloudConvert](https://cloudconvert.com/png-to-webp)
+* [TinyPNG](https://tinypng.com/)
+
 
  [Back To Top](<#contents>)
 
@@ -248,7 +255,7 @@ This site was deployed to GitHub pages. The steps to deploy are as follows:
   3. Under Source, select main from the Branch dropdown menu. Then click save.
   4. Once the main branch has been selected, the page will automatically be refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-![How To Deploy](https://github.com/bpstephanie/Clean_Crave/blob/main/media/deploy_1.png)
+![How To Deploy](https://github.com/bpstephanie/The_Country_Quiz/blob/main/media/deployment.png)
 
 The live link can be found here - https://bpstephanie.github.io/The_Country_Quiz/ 
 
@@ -259,7 +266,7 @@ A copy of the GitHub Repository can be made by forking the GitHub account. This 
   1. Log in to GitHub and locate the repository.
   2. On the right hand side of the page, in line with the repository name, is a button called 'Fork', click on the button to create a copy of the original repository in your GitHub Account.
   
-![How To Fork](https://github.com/bpstephanie/Clean_Crave/blob/main/media/fork_1.png)
+![How To Fork](https://github.com/bpstephanie/The_Country_Quiz/blob/main/media/fork.png)
 
 ### **To Clone the Project**
 
@@ -272,9 +279,9 @@ The steps to clone a project from GitHub are as follows:
   5. Type 'git clone' then paste the URL copied from GitHub.
   6. Upon pressing enter, the local clone will be created.
 
-![How To Clone](https://github.com/bpstephanie/Clean_Crave/blob/main/media/clone_1.png)
+![How To Clone](https://github.com/bpstephanie/The_Country_Quiz/blob/main/media/clone.png)
 
- [Back To Top](<#contents>)
+[Back To Top](<#contents>)
 
 ## Credits 
 
@@ -283,7 +290,7 @@ The steps to clone a project from GitHub are as follows:
 * Fonts: [Google Fonts](https://fonts.google.com/)
 * Icons: [Fontawesome](https://fontawesome.com/)
 * Colour Palettes: [Coolors](https://www.bbcgoodfood.com/)
-* Mock-up: [Techsini](https://techsini.com/)
+* Mock-up: [Am I Responsive](https://techsini.com/)
 * Chrome for Developers: [Dev Tools](https://developer.chrome.com/docs/devtools)
 
 * The polka-dot background was learned from [30 Seconds of Code](https://www.30secondsofcode.org/css/s/polka-dot-pattern/). 
