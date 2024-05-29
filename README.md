@@ -33,6 +33,21 @@ Welcome to <a href="https://bpstephanie.github.io/The_Country_Quiz/">The Country
 # User Experience UX
 ### User Stories
 
+ * First-time User:
+    - I want to understand how to play the quiz.
+    - I want to see if I get the answer incorrect or incorrect.
+    - I want to be able to restart the quiz.
+    - I want to interact with and play the quiz testing my knowledge and being entertained.
+
+ * Repeat User:
+    - I want to answer different questions.
+    - I want to improve my score.
+
+ * Site Owner:
+    - I want users to easily understand how to play the quiz.
+    - I want users to enjoy the quiz and feel challenged answering the questions.
+    - I want users to play the quiz many times.
+
 
 # Design
 ### Wireframes
