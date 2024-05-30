@@ -31,7 +31,7 @@ The Country Quiz was found to be responsive to all the screen sizes checked.
 
 ## Browser Compatibility
 
-The Country Quiz was manually tested on Google Chrome, Safari, Mozilla Firefox, Microsoft Edge, iOS and Andriod with no visible issues for the user.
+The Country Quiz was manually tested on Google Chrome, Safari, Mozilla Firefox, Microsoft Edge, iOS and Android with no visible issues for the user.
 
 ## Testing User Stories
 
@@ -73,11 +73,11 @@ The Country Quiz was manually tested on Google Chrome, Safari, Mozilla Firefox, 
 ### Resolved
 
 - When the quiz was restarted mid-game, there was a bug causing the question number to continue to keep increasing past 10 (e.g.  
-  11/10, 12/10 and so on). I had reset the questionNumber to 0 but had not set questionNumber.innerText to 0. The correction was made.
+  11/10, 12/10 and so on). I had reset the questionCounter to 0 but had not set questionCounter.innerText to 0. The correction was made.
 
 - If a user typed in a username which was less than 3 letters or more than 10 letters, they received an alert. However, there was a bug that if they then tried to type in the correct number of letters, the 'Start Game' button did not appear. The correction was made. 
 
-During the manual responsiveness tests, it was found that on a smaller screen, 360px, the 'Restart'button was not completely contained. Through a quick edit in CSS this was rectified.
+During the manual responsiveness tests, it was found that on a smaller screen, 360px, the 'Restart' button was not completely contained. Through a quick edit in CSS this was rectified.
 
 ![Restart Button Bug](media/bug1.png)
 
@@ -100,10 +100,12 @@ The site was also tested using [Wave](https://wave.webaim.org/). There are no er
 ### Peer review
 As well as the beforementioned testing, The Country Quiz was reviewed by my peers in Slack. A few points were made such as; 
 
-- The end condolense message should show the number of questions the user got correct rather than incorrect. This was quickly changed.
+- The end condolence message should show the number of questions the user got correct rather than incorrect. This was quickly changed.
 
 - The contrast between the background colour (which was red/orange) and the placeholder (white) text wasn't very easy to read. Therefore I switched the background back to white and changed the placeholder text to be the same colour as the label.
 
 - To add the 'Escape' key as a keydown event to act the same way as the "X" on the instructions modal. This was added.
 
 - To increase the thickness of the horizontal ruler under "Instructions" and to add some margin between the 'Instructions' and the paragraphs. This was edited.
+
+[Go Back To README.md](README.md)

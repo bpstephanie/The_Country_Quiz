@@ -1,4 +1,4 @@
-# The Couuntry Quiz
+# The Country Quiz
 The Country Quiz is an interactive JavaScript game to test users knowledge about South America in a fun way. Usernames, correct answers and incorrect answers are recorded. The quiz has 10 questions per round which are randomized so the user can play many times. There is audio and visual feedback for both correct and incorrect answers.
 
 Welcome to <a href="https://bpstephanie.github.io/The_Country_Quiz/">The Country Quiz</a>
@@ -77,7 +77,7 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
 
  - The How To Play Modal gives the user instructions for the quiz.
 
- - The Welcome Message Modal is what users will see first when loading The Country Quiz. From this window, the user will be able to navigate to the HoW To Play Modal or the Main Game Page.
+ - The Welcome Message Modal is what users will see first when loading The Country Quiz. From this window, the user will be able to navigate to the How To Play Modal or the Main Game Page.
 
 - The [Main Game Page](index.html) has the following areas:
     - The username area: where the user is asked to enter their name.
@@ -96,12 +96,12 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
   ![Rubik Mono One](media/rubik-mono-one.png)
 
 
-  * 'Rubik' was chosen for the text for its compatability with the heading font.
+  * 'Rubik' was chosen for the text for its compatibility with the heading font.
 
   ![Rubik](media/rubik.png)
 
  - ### Colour Scheme
-   The colours chosen were to crerate a fun environment whilst creating contrast for easy viewing. A bright blue and a light blue was chosen for the background and game background. Brown for the username label, question counter and score area. Coral and off white for the game buttons and black for the outline.
+   The colours chosen were to create a fun environment whilst creating contrast for easy viewing. A bright blue and a light blue was chosen for the background and game background. Brown for the username label, question counter and score area. Coral and off white for the game buttons and black for the outline.
 
 ![Colour Palette](media/colour-palette.png)
 
@@ -120,7 +120,7 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
     ![Welcome Message Modal Mobile](<#media/site-screenshots/welcome-modal-mobile.png)
 
   - ### How To Play Modal
-    This modal gives instructions to the user on how to play the quiz. When exitting this pop-up they will be taken back to the [Welcome Message Modal](<#welcome-message-modal>).
+    This modal gives instructions to the user on how to play the quiz. When exiting this pop-up they will be taken back to the [Welcome Message Modal](<#welcome-message-modal>).
 
     How To Play Modal Desktop:
     ![How To Play Modal Desktop](<#media/site-screenshots/howtoplay-modal.png>)
@@ -221,13 +221,13 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
 
 ### Languages
 
-The folloowing languages were used to create and develop this website:
+The following languages were used to create and develop this website:
 
 * [HTML5](https://html.spec.whatwg.org/) - provides the content and structure for the website.
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - provides the styling.
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript) - provides the responsive quiz elements.
 
-### Rescources and Tools
+### Resources and Tools
 * [Balsamiq](https://balsamiq.com/wireframes/)
 * [Gitpod](https://www.gitpod.io/#get-started) 
 * [Github](https://github.com/)
