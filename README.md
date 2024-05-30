@@ -125,7 +125,7 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
     How To Play Modal Desktop:
     ![How To Play Modal Desktop](media/site-screenshots/howtoplay-modal.png)
 
-    How To Play Modal Mobile:
+    How To Play Modal Mobile: \
     ![How To Play Modal Mobile](media/site-screenshots/howtoplaymodal-mobile.png)
 
   - ### Main Game Page
