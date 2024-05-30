@@ -25,6 +25,9 @@
         <h1><i class="fa-solid fa-earth-americas"></i>The Country Quiz</h1>
         <div class="btn-container">
             <div id="username-container">
+                <div id="home-container">
+                    <button id="home-btn" class="initial-btn">Home</button>
+                </div>
                 <form method="POST">
                     <label for="username" id="label">Hi quizzer!<br> What's your name?</label><br>
                     <input id="username" type="text" name="name" placeholder="Type your name here..." autocomplete="on"
@@ -52,7 +55,8 @@
     <div id="howtoplay-modal" class="modal">
         <div class="htp-modal-content">
             <span id="close-btn">&times;</span><br>
-            <h2>Instructions</h2><hr>
+            <h2>Instructions</h2>
+            <hr>
             <p>You will be given 10 random questions about South America. Each question will have 12 multiple choice
                 answers
                 which are the 12 countries in South America.</p><br>
@@ -117,4 +121,5 @@
     <script type="module" src="assets/js/script.js"></script>
     <noscript>Your browser does not support JavaScript!</noscript>
 </body>
+
 </html>

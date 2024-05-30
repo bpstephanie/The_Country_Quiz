@@ -27,6 +27,10 @@ h1 {
 }
 
 /* Start game buttons */
+#home-container {
+    text-align: center;
+}
+
 .btn-container {
     background-color: rgba(165, 226, 241, 0.9);
     display: flex;

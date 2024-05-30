@@ -4,6 +4,7 @@ const htpButton = document.getElementById('htp-btn');
 const lgsButton = document.getElementById('lgs-btn');
 const howToPlayModal = document.getElementById('howtoplay-modal');
 const closeButton = document.getElementById('close-btn');
+const homeButton = document.getElementById('home-btn');
 
 lgsButton.onclick = function() {
   modal.style.display = "none";
@@ -16,6 +17,11 @@ htpButton.onclick = function() {
 closeButton.onclick = function(){
   howToPlayModal.style.display = "none";
 };
+
+homeButton.onclick = function(){
+  modal.style.display = "block";
+};
+
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
     howToPlayModal.style.display = "none";    
