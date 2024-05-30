@@ -82,6 +82,9 @@ During the manual responsiveness tests, it was found that on a smaller screen, 3
 
 ![Restart Button Bug](media/bug1.png)
 
+### Unsesolved
+- When the user presses escape to exit the How To Play Modal and are back on the Welcome Message Modal if they press enter they are taken back to the How To Play Modal.
+
 ## Additional Testing
 
 The site was tested using [Google Lighthouse](https://developers.google.com/web/tools/lighthouse). The results were as follows:
