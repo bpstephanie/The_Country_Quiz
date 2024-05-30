@@ -20,6 +20,7 @@ Welcome to <a href="https://bpstephanie.github.io/The_Country_Quiz/">The Country
     * [How To Play Modal](<#how-to-play-modal>)
     * [Main Game Page](<#main-game-page>)
     * [Main Heading](<#main-heading>)
+    * [Home Button](<#home-button>)
     * [Username](<#username>)
     * [Start Game Button](<#start-game-button>)
       * [Restart Button](<#restart-button>)
@@ -111,7 +112,7 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
   ## Existing Features
 
   - ### Welcome Message Modal
-    When the user first enters the site, a welcome modal message appears with two buttons, the 'How To Play' button which takes the user to the instructions for the quiz and the 'Let's get Started' button which closes the modal and takes the user to the [Main Game Page](<#main-game-page>).
+    When the user first enters the site, a welcome message modal appears with two buttons, the 'How To Play' button which takes the user to the instructions for the quiz and the 'Let's get Started' button which closes the modal and takes the user to the [Main Game Page](<#main-game-page>).
 
     Welcome Message Modal Desktop:\
     ![Welcome Message Modal Desktop](media/site-screenshots/welcome-modal.png)
@@ -137,6 +138,11 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
 
       Mobile Main Heading:\
       ![Main Heading Mobile](media/site-screenshots//main-heading-mobile.png)
+    
+    - #### Home Button
+      The home button will take the user back to the welcome message modal where that can access the instructions. 
+
+      ![Home Button](media/site-screenshots/home-button.png)
 
     - #### Username 
       In order for a user to play the quiz, a username must be entered. The username has to be 3 - 10 characters long and must be letters.
