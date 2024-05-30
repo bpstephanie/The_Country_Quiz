@@ -48,7 +48,7 @@ Welcome to <a href="https://bpstephanie.github.io/The_Country_Quiz/">The Country
 
  * First-time User:
     - As a user, I want to understand how to play the quiz.
-    - As a user, I want to see if I get the answer incorrect or incorrect.
+    - As a user, I want to see if I get the answer correct or incorrect.
     - As a user, I want to be able to restart the quiz.
     - As a user, I want to interact with and play the quiz testing my knowledge and being entertained.
 
@@ -114,10 +114,10 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
     When the user first enters the site, a welcome modal message appears with two buttons, the 'How To Play' button which takes the user to the instructions for the quiz and the 'Let's get Started' button which closes the modal and takes the user to the [Main Game Page](<#main-game-page>).
 
     Welcome Message Modal Desktop:\
-    ![Welcome Message Modal Desktop](<#media/site-screenshots/welcome-modal.png)
+    ![Welcome Message Modal Desktop](media/site-screenshots/welcome-modal.png)
 
     Welcome Message Modal Mobile:\
-    ![Welcome Message Modal Mobile](<#media/site-screenshots/welcome-modal-mobile.png)
+    ![Welcome Message Modal Mobile](media/site-screenshots//welcome-modal-mobile.png)
 
   - ### How To Play Modal
     This modal gives instructions to the user on how to play the quiz. When exiting this pop-up they will be taken back to the [Welcome Message Modal](<#welcome-message-modal>).
@@ -132,14 +132,14 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
     - #### Main Heading
       A large stylized font which is fully responsive to different screen sizes.
 
-      Desktop main heading:
+      Desktop Main Heading:
       ![Main Heading Desktop](media/site-screenshots/main-heading.png)
 
-      Mobile main heading:\
+      Mobile Main Heading:\
       ![Main Heading Mobile](media/site-screenshots//main-heading-mobile.png)
 
     - #### Username 
-      In order for a user to play the quiz, a username must be entered. The username has to be 3 - 10 character long and must be letters.
+      In order for a user to play the quiz, a username must be entered. The username has to be 3 - 10 characters long and must be letters.
 
       Username Desktop:
       ![Username Area Desktop](media/site-screenshots/username.png)
@@ -151,7 +151,7 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
       ![Invalid Username Alert](media/site-screenshots/invalid-username.png)
 
     - #### Start Game Button
-      Once a username has been entered, a good luck message is shown and the 'Start' Button appears for the user to begin.#
+      Once a username has been entered, a good luck message is shown and the 'Start' Button appears for the user to begin.
 
       Successful Username Input Message and Start Button: 
       ![Successful Username Input Message and Start Button](media/site-screenshots/successful-input.png) 
@@ -179,7 +179,7 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
         It will display 0/10 until the user starts the quiz. For every question that appears on screen, the counter will increase by 1 until it reaches 10, this has been generated through JavaScript.
 
       - ##### Question Area 
-        It is generated from a JavaScript array. The questions are chosen randomly out of a possible 50 questions. When the user has finished their quiz, a final 'Well done' or 'Bad luck' message appears depending on the score of the user. Six question and above correct out of ten warrants the user a well done message, five correct answers and below receive a bad luck message.
+        It is generated from a JavaScript array. The questions are chosen randomly out of a possible 50 questions. When the user has finished their quiz, a final 'Well done' or 'Bad luck' message appears depending on the score of the user. Six questions and above correct out of ten warrants the user a well done message, five correct answers and below receive a bad luck message.
 
         Well Done Message:
         ![Well Done Message](media/site-screenshots/well-done.png)
@@ -188,11 +188,11 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
         ![Bad Luck Message](media/site-screenshots/bad-luck.png)
 
       - ##### Answer Buttons
-        Each of the answer buttons display the name of the country they represent as well at the flag. The flag was chosen as the background for more visual users and is faded out to improve contrast and readability.
+        Each of the answer buttons display the name of the country they represent as well as the flag. The flag was chosen as the background for more visual users and is faded out to improve contrast and readability.
 
         The answer buttons have a hover effect when the user moves their mouse over them. If the correct answer is chosen, the text and border will highlight green for two seconds, if the incorrect answer is chosen, the text and border will highlight red for two seconds. In both cases there is also a corresponding sound.
 
-        After much consideration, it was decided not to highlight the correct answer if the user gets the answer. This was chosen to allow the user to play the quiz more times until they get the answer correct.
+        After much consideration, it was decided not to highlight the correct answer if the user gets the answer wrong. This was chosen to allow the user to play the quiz more times until they get the answer correct.
 
         Correct Answer Visual Feedback:
         ![Correct Answer Visual Feedback](media/site-screenshots/correct-answer.png)
@@ -204,7 +204,7 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
         The score area tracks both the number of correct answers and incorrect answers.
 
     - #### Footer
-      The footer consists of two links to the developer's LinkedIn and GitHub respectively.
+      The footer consists of two links to the LinkedIn and GitHub profiles of myself, respectively.
       ![The Footer](media/site-screenshots/footer.png)
   
  [Back To Top](<#contents>)
@@ -293,8 +293,8 @@ The steps to clone a project from GitHub are as follows:
 * Chrome for Developers: [Dev Tools](https://developer.chrome.com/docs/devtools)
 
 * The code to create the modals was inspired by [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp).
-* The code to implement audio in JavaScript  by [Noah-Ekin] (https://noaheakin.medium.com/).adding-sound-to-your-js-web-app-f6a0ca728984#:~:text=The%20 simplest%20way%20to%20 add,starts%20 playing%20the%20 current%20audio. let winSound = document.querySelector('#win-sound').
-* This YouTube tutorial was followed for the basic setup of the quiz[James Q Quick](https://www.youtube.com/watch?v=zZdQGs62cR8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=4).
+* The code to implement audio in JavaScript  by [Noah Ekin](https://noaheakin.medium.com/adding-sound-to-your-js-web-app-f6a0ca728984).
+* This YouTube tutorial was followed for the basic setup of the quiz [James Q Quick](https://www.youtube.com/watch?v=zZdQGs62cR8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=4).
 * The code to randomize quiz questions was inspired by [She Codes](https://www.shecodes.io/athena/10246-how-to-show-random-questions-in-a-quiz-using-javascript).
 * The code for the score area was inspired by the Code Institute Love Maths Project.
 
