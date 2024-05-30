@@ -26,3 +26,39 @@ The responsive design tests were carried out by [Responsive Test Tool](https://r
 | Images       |   pass            | pass           | pass           | pass  | pass   | pass   |
 | Link         |   pass            | pass           | pass           | pass  | pass   | pass   |
 | Rendering    |   pass            | pass           | pass           | pass  | pass   | pass   |
+
+The Country Quiz was found to be responsive to all the screen sizes checked.
+
+## Browser Compatibility
+
+The Country Quiz was manually tested on Google Chrome, Safari, Mozilla Firefox, Microsoft Edge, iOS and Andriod with no visible issues for the user.
+
+## Known Bugs
+
+### Resolved
+
+- When the quiz was restarted mid-game, there was a bug causing the question number to continue to keep increasing past 10 (e.g.  
+  11/10, 12/10 and so on). I had reset the questionNumber to 0 but had not set questionNumber.innerText to 0. The correction was made.
+
+- If a user typed in a username which was less than 3 letters or more than 10 letters, they received an alert. However, there was a bug that if they then tried to type in the correct number of letters, the 'Start Game' button did not appear. The correction was made. 
+
+During the manual responsiveness tests, it was found that on a smaller screen, 360px, the 'Restart'button was not completely contained. Through a quick edit in CSS this was rectified.
+
+![Restart Button Bug](media/bug1.png)
+
+## Additional Testing
+
+The site was tested using [Google Lighthouse](https://developers.google.com/web/tools/lighthouse). The results were as follows:
+
+For Desktop: \
+![Google Lighthouse Desktop Rating](media/lighthouse-desktop.png)
+
+For Mobile: \
+![Google Lighthouse Mobile Rating](media/lighthouse-mobile.png)
+
+The site was also tested using [Wave](https://wave.webaim.org/). The results were as follows:
+![Wave](media/wave.png)
+
+### Peer review
+As well as the beforementioned testing, The Country Quiz was reviewed by my peers in Slack. A few points were made such as; .
+
