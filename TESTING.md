@@ -56,9 +56,19 @@ For Desktop: \
 For Mobile: \
 ![Google Lighthouse Mobile Rating](media/lighthouse-mobile.png)
 
-The site was also tested using [Wave](https://wave.webaim.org/). The results were as follows:
-![Wave](media/wave.png)
+The site was also tested using [Wave](https://wave.webaim.org/). There are no errors howvever there are 6 alerts including a small text alert and two possible headings. These have not be changed because the 'question' is intended to be small and the score area is also not meant to be headings. The results were as follows:
+
+![Wave Summary](media/wave-summary.png)
+
+![Wave Detailed Report](media/wave-details.png)
 
 ### Peer review
-As well as the beforementioned testing, The Country Quiz was reviewed by my peers in Slack. A few points were made such as; .
+As well as the beforementioned testing, The Country Quiz was reviewed by my peers in Slack. A few points were made such as; 
 
+- The end condolense message should show the number of questions the user got correct rather than incorrect. This was quickly changed.
+
+- The contrast between the background colour (which was red/orange) and the placeholder (white) text wasn't very easy to read. Therefore I switched the background back to white and changed the placeholder text to be the same colour as the label.
+
+- To add the 'Escape' key as a keydown event to act the same way as the "X" on the instructions modal. This was added.
+
+- To increase the thickness of the horizontal ruler under "Instructions" and to add some margin between the 'Instructions' and the paragraphs. This was edited.
