@@ -123,10 +123,10 @@ The Country Quiz consists of one page, the [Main Game Page](index.html), and two
     This modal gives instructions to the user on how to play the quiz. When exiting this pop-up they will be taken back to the [Welcome Message Modal](<#welcome-message-modal>).
 
     How To Play Modal Desktop:
-    ![How To Play Modal Desktop](<#media/site-screenshots/howtoplay-modal.png>)
+    ![How To Play Modal Desktop](media/site-screenshots/howtoplay-modal.png)
 
     How To Play Modal Mobile:
-    ![How To Play Modal Mobile](<#media/site-screenshots/howtoplaymodal-mobile.png>)
+    ![How To Play Modal Mobile](media/site-screenshots/howtoplaymodal-mobile.png)
 
   - ### Main Game Page
     - #### Main Heading
@@ -310,6 +310,8 @@ The steps to clone a project from GitHub are as follows:
 ### Media
 
 The images are from [Pixabay](https://pixabay.com/) and [Flag Colour Codes](https://www.flagcolorcodes.com/).
+
+The llama graphic is from [Pixabay](https://pixabay.com/) and I created the background in [Canva](https://www.canva.com/).
 
 The flag images were made opaque with [OnlinePNGTools](https://onlinepngtools.com/change-png-opacity#:~:text=World's%20simplest%20online%20Portable%20Network,%2C%20quick%2C%20and%20very%20powerful.).
 
