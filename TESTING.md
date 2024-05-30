@@ -33,6 +33,41 @@ The Country Quiz was found to be responsive to all the screen sizes checked.
 
 The Country Quiz was manually tested on Google Chrome, Safari, Mozilla Firefox, Microsoft Edge, iOS and Andriod with no visible issues for the user.
 
+## Testing User Stories
+
+* First-time User:  
+
+ * As a user, I want to understand how to play the quiz.
+    - On the Welcome Message Modal, there is a button 'How To Play' which when clicked takes the user to the instructions.
+
+ * As a user, I want to see if I get the answer incorrect or incorrect.
+    - There is audio and visual feedback with every answer the user gives. Green colouring and 'tadaa' sound for a correct answer and Red colouring and 'buzz' sound for an incorrect answer.
+
+ * As a user, I want to be able to restart the quiz.
+    - The user can restart the quiz at any moment with the 'Restart' button.
+
+ * As a user, I want to interact with and play the quiz testing my knowledge and being entertained.
+    - The quiz has a mixture of easy and difficult questions to test knowledge and the audio feedback is entertaining.
+
+* Repeat User:
+
+ * As a repeat user, I want to answer different questions.
+    - There are 50 questions in the quiz therefore the user can play many times.
+
+ * As a repeat user, I want to improve my score.
+    - The user can improve their score by playing the quiz more times.
+
+* Site Owner:
+ * As a site owner, I want users to easily understand how to play the quiz.
+    - There are instructions for the user to read.
+
+ * As a site owner, I want users to enjoy the quiz and feel challenged answering the questions.
+    - The difficulty is mixed in the questions creating a challenging quiz for the user.
+
+ * As a site owner, I want users to play the quiz many times.
+    - The randomized questions mean the user may want to play different rounds to see if they know more questions in one round as opposed to the other.
+ 
+
 ## Known Bugs
 
 ### Resolved
